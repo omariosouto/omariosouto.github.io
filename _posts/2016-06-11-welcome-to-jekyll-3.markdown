@@ -5,7 +5,7 @@ date:   2016-06-11 22:57:25 -0300
 categories: jekyll update
 introduction: Test of introduction quisquam at quibusdam ratione illo deserunt facere, eveniet aliquam eius voluptatum hic. Assumenda quo cupiditate, quod explicabo?
 main-tag: 'js'
-nav-color: '#3498db'
+nav-color: '#fc0'
 tags:
 - jekyll
 - gulp

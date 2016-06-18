@@ -5,7 +5,7 @@ date:   2016-06-09 22:57:25 -0300
 categories: jekyll update
 introduction: Este é um teste do negócio que eu falei
 main-tag: 'dev'
-nav-color: '#fc0'
+nav-color: '#637a91'
 tags:
 - jekyll
 - gulp
