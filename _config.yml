@@ -33,5 +33,5 @@ links:
   - title: Sobre
     url: /sobre
 
-# exclude my node related stuff
+# exclude
 exclude: ['gulpfile.js','package.json', 'assets', 'node_modules', 'vendor/bundle/ruby']
