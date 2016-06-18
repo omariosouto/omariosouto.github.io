@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Teste de Post"
-date:   2016-06-13 22:57:25 -0300
+date:   2016-06-09 22:57:25 -0300
 categories: jekyll update
 introduction: Este é um teste do negócio que eu falei
 main-tag: 'dev'
-nav-color: '#3498db'
+nav-color: '#fc0'
 tags:
 - jekyll
 - gulp
