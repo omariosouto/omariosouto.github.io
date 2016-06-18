@@ -1,0 +1,25 @@
+.header-blog
+	width 100%
+	padding rem(10px 18px) //.625rem 1.25rem
+	background $base-color
+	border-bottom 5px solid $detail-color;
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 2
+	box-shadow: 1px 1px 5px rgba(#000,0.2)
+	& > .logo
+		font-family 'Lato', sans-serif
+		margin 0
+		color #FFFFFF
+		a
+			color: inherit
+			&:before
+				content: "{Mario Souto}"
+				font-family: inherit
+				+below(700px)
+					content: "{MS}"
+			&hover,
+			&focus
+				text-decoration none

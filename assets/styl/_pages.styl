@@ -1,0 +1,45 @@
+.page-control
+	width: auto
+	max-width: rem(970px)
+	float: none
+	display: block
+	margin-right: auto
+	margin-left: auto
+	padding: 0 rem(15px) //0 1.25rem
+	margin: 0 auto 1.875rem
+	font-style: normal
+	line-height: 1.5
+	letter-spacing: rem(.5px)
+.page-intern
+	h1, h2, h3, h4, ol, ul, li, p, blockquote, .comments-area
+		@extends .page-control
+
+	h1
+		font-size: rem(32px)
+		@extends .title-weight
+		@extends .font-lato
+		text-align: center
+	h2
+		font-size: rem(28px)
+		@extends .title-weight
+		@extends .font-lato
+	h3
+		font-size: rem(22px)
+		@extends .title-weight
+		@extends .font-lato
+	h3
+		font-size: rem(18px)
+		@extends .title-weight
+		@extends .font-lato
+
+	ul, ol
+		padding-left: rem(30)
+	li
+		display: list-item
+		padding: 0
+		position: relative
+	img
+		display: block
+		width: auto
+		max-width: 100%
+		margin: auto

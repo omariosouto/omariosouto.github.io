@@ -1,0 +1,44 @@
+themes = {
+    card-jekyll: #B31917,
+    card-css: #2DA0C3,
+    card-js: #ffcc00,
+    card-html: #d35400,
+    card-dev: #637a91,
+    card-wp: #21759a,
+}
+
+for theme, category-color in themes
+	.{theme}
+		&:after
+			background: category-color
+		.card-body
+			> .label
+				background-color category-color
+			> .title
+				color: category-color
+			> .tags
+				a
+					border: 1px solid category-color
+					color: category-color
+
+		article
+			> h1, > h2, > h3, > h4
+				color: category-color
+			ul
+				li
+					&:before
+						content: "•"
+						color: category-color
+						position: absolute
+						left: rem(-20px)
+						font-size: rem(31px)
+						top: rem(-10px)
+		&.header-blog
+			border-color: category-color
+		&.side-menu
+			border-color: category-color
+			.title
+				border-color: category-color
+			a
+				&:before
+					color: category-color

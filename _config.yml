@@ -1,0 +1,37 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+encoding: utf-8
+
+# Site settings
+title: Mario Souto
+author: Mario Souto
+sub-title: Desenvolvedor Front-End
+email: mariosoutoskn@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  "Meu Blog pessoal"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://mariosouto.com.br" # the base hostname & protocol for your site
+twitter_username: marioquemario
+github_username:  mariosout
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+# Navigation Menu
+links:
+  - title: Home
+    url: /
+  - title: Tags
+    url: /tags
+  - title: Sobre
+    url: /sobre
+
+# exclude my node related stuff
+exclude: ['gulpfile.js','package.json', 'assets', 'node_modules', 'vendor/bundle/ruby']

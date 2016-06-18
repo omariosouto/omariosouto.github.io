@@ -1,0 +1,96 @@
+.side-menu
+	$menu-size = 300px
+	position: fixed
+	width: rem($menu-size)
+	height: 100%
+	z-index: 21
+	top: 0
+	right: rem(-($menu-size))
+	background: #FFF
+	border-bottom rem(5px) solid #c0392b
+	overflow: auto
+	@extend .standard-transition
+	.title
+		font-family: 'Lato', sans-serif
+		text-align: center
+		margin: 0
+		padding-top: rem(19.45px)
+		padding-bottom: rem(11px)
+		color: transparent
+		background-color: $base-color
+		border-bottom: rem(5px) solid $detail-color
+		transition: all .25s ease-in-out
+	&.active
+		right: 0
+		.title
+			color: #FFF
+		.menu-list
+			opacity: 1
+
+.menu-list
+	list-style-type: none
+	padding: 0
+	margin: 0
+	opacity: 0
+	transition: all .25s ease-in-out
+	a
+		color: $base-color
+		font-family: 'Lato', sans-serif
+		font-size: rem(18px)
+		padding: rem(15px)
+		border-bottom: rem(1px) solid $detail-light
+		display: block
+		@extend .standard-transition
+		&:focus,
+		&:hover
+			background-color: $detail-light
+		&:before
+			content: "\f054"
+			color: $detail-color
+			margin-right: rem(15px)
+
+.btn-menu
+	width: rem(30px)
+	height: rem(25px)
+	position: fixed
+	right: 0;
+	top: rem(4px)
+	margin: rem(15px) rem(19px)
+	background transparent
+	border 0
+	padding: 0
+	transform: rotate(0deg)
+	cursor: pointer
+	z-index: 22
+	@extend .standard-transition
+	outline: none !important
+	span
+		display: block
+		position: absolute
+		height: rem(4px)
+		width: 100%
+		background: #FFFFFF
+		opacity: 1
+		left: 0
+		transform: rotate(0deg)
+		transition: .3s ease-in-out
+		&:nth-child(2)
+			top: rem(10px)
+		&:nth-child(1)
+			top: 0px
+		&:nth-child(3)
+			top: rem(20px)
+	&.active
+		span
+			&:nth-child(2)
+				opacity: 0
+				left: rem(-60px)
+			&:nth-child(1)
+				top: rem(10px)
+				transform: rotate(135deg)
+			&:nth-child(3)
+				top: rem(10px)
+				transform: rotate(-135deg)
+
+
+
