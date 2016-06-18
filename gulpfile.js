@@ -72,7 +72,8 @@ gulp.task('js', function(){
 	return gulp.src('assets/js/**/*.js')
 		.pipe(concat('scripts.min.js'))
 		.pipe(uglify())
-		.pipe(gulp.dest('_site/assets/js'));
+		.pipe(gulp.dest('_site/assets/js'))
+		.pipe(gulp.dest('assets/js'));
 });
 
 
