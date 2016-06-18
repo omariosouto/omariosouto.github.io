@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% if page.title %} {{ page.title }} - {{ site.title }} {% else %} {{ site.title }} - {{ site.sub-title }}  {% endif %}</title>
 <!-- All Compiled CSS -->
-<link rel="stylesheet" href="/assets/css/application.css">
+<link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 <!-- Chrome Theme Color -->
