@@ -1,5 +1,5 @@
-{% assign m = post.date | date: "%-m" %}
-<span>{{ post.date | date: "%-d" }}</span>
+{% assign m = page.date | date: "%-m" %}
+<span>{{ page.date | date: "%-d" }}</span>
 {% case m %}
   {% when '1' %}JAN
   {% when '2' %}FEV
@@ -14,4 +14,4 @@
   {% when '11' %}NOV
   {% when '12' %}DEZ
 {% endcase %}
-{{ post.date | date: "%Y" }}
+{{ page.date | date: "%Y" }}

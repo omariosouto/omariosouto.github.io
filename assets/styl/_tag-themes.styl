@@ -9,17 +9,31 @@ themes = {
 
 for theme, category-color in themes
 	.{theme}
+		.card-body
+			.date
+				background-color: category-color
+				color: #FFFFFF
 		&:after
 			background: category-color
 		.card-body
 			> .label
-				background-color category-color
+				color category-color
 			> .title
 				color: category-color
 			> .tags
 				a
 					border: 1px solid category-color
 					color: category-color
+
+		.header-page
+			background-color: #FFFFFF
+			.post-title,
+			.subtitle,
+			.date
+				color: category-color
+			.date
+				background-color: category-color
+				color: #FFFFFF
 
 		article
 			> h1, > h2, > h3, > h4
@@ -34,11 +48,16 @@ for theme, category-color in themes
 						font-size: rem(31px)
 						top: rem(-10px)
 		&.header-blog
-			border-color: category-color
+			.logo
+				color: category-color
+		&.btn-menu span
+			background-color: category-color
 		&.side-menu
 			border-color: category-color
+			.menu-list li
+				border-bottom: 1px solid category-color
 			.title
-				border-color: category-color
+				color: category-color
 			a
 				&:before
 					color: category-color

@@ -3,13 +3,48 @@
 <head>
      {% include head.html %}
 </head>
-<body>
+<body class="type-post">
 
     {% include header.html %}
 
+
 	<main class="page-intern card-{{ page.main-tag }}">
-		<article>
-			<h1>{{ page.title }}</h1>
+
+	<style type="text/css">
+		.audio-bar {
+			width: 100%;
+			height: 30px;
+			background-color: #DDD;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 100;
+			box-shadow: 1px 1px 1px #000;
+
+		}
+		audio {
+			width: 100%;
+			box-shadow: 1px 1px 6px rgba(0,0,0,0.3);
+		}
+	</style>
+	<section class="audio-bar">
+		<audio id="jquery_jplayer_1"  controls>
+			<source src="http://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+			<source src="http://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+	</section>
+
+
+		<header class="header-page post" role="banner">
+			<div class="content">
+				<time itemprop="datePublished" class="date" datetime="{{ page.date | date_to_xmlschema }}"> {% include page-date.html %}</time>
+				<h1 class="post-title" itemprop="name">{{ page.title }}</h1>
+				<p itemprop="description" class="subtitle">{{ page.introduction }}</p>
+			</div>
+		</header>
+		<article class="content-area">
 			{{ content }}
 		</article>
 		{% include comments.html %}

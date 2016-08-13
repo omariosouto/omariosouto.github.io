@@ -1,9 +1,9 @@
 .side-menu
-	$menu-size = 300px
+	$menu-size = 290px
 	position: fixed
 	width: rem($menu-size)
 	height: 100%
-	z-index: 21
+	z-index: 102
 	top: 0
 	right: rem(-($menu-size))
 	background: #FFF
@@ -26,6 +26,10 @@
 			color: #FFF
 		.menu-list
 			opacity: 1
+			li
+				border-bottom: 1px solid #000
+
+
 
 .menu-list
 	list-style-type: none
@@ -61,7 +65,7 @@
 	padding: 0
 	transform: rotate(0deg)
 	cursor: pointer
-	z-index: 22
+	z-index: 110
 	@extend .standard-transition
 	outline: none !important
 	span
@@ -69,7 +73,7 @@
 		position: absolute
 		height: rem(4px)
 		width: 100%
-		background: #FFFFFF
+		background: #28282b
 		opacity: 1
 		left: 0
 		transform: rotate(0deg)
@@ -91,6 +95,8 @@
 			&:nth-child(3)
 				top: rem(10px)
 				transform: rotate(-135deg)
-
+	&.type-page
+		span
+			background: #FFF
 
 

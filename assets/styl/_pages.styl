@@ -1,6 +1,86 @@
+.header-page
+	height: 100vh
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	position: relative
+
+	&.post
+		height: auto !important
+		margin-top: rem(60px)
+		width: 100%
+		position: relative
+		.content
+			width: 100%
+			padding-top: rem(175px)
+
+	&.image
+		background-size: cover
+		background-position: center
+		background-attachment: fixed
+		&:after
+			content: ''
+			background-image: linear-gradient(180deg,rgba(0,0,0,.8) 0,transparent 50%,transparent 90%,rgba(0,0,0,.8))
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			z-index: 2
+		&:before
+			content: ''
+			background-color: #000
+			opacity: .4
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			z-index: 2
+
+	.content
+		position: relative
+		z-index: 3
+
+	.post-title
+		font-size: rem(73px)
+		line-height: 1
+		+below(700px)
+			font-size: rem(60px)
+	.subtitle
+		font-size: rem(20px)
+
+	.date
+		text-transform: uppercase;
+		font-size: rem(25px)
+		color: #FFFFFF
+		position: absolute
+		left: 0
+		top: -1px
+		width: rem(160px) !important
+		height: rem(160px) !important
+		padding: rem(18px) !important
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		z-index: 2
+		span
+			font-size: rem(80px)
+			font-weight: bold
+			display: block
+			line-height: 1
+
+	.post-title,
+	.subtitle,
+	.date
+		color: #FFFFFF
+		text-align: center
+
 .page-control
 	width: auto
-	max-width: rem(970px)
+	max-width: rem(800px)
 	float: none
 	display: block
 	margin-right: auto
@@ -10,24 +90,27 @@
 	font-style: normal
 	line-height: 1.5
 	letter-spacing: rem(.5px)
+
 .page-intern
-	h1, h2, h3, h4, ol, ul, li, p, blockquote, .comments-area
+	.content-area
+		padding: 50px 0;
+
+	h1, h2, h3, h4, ol, ul, li, p, blockquote, .comments-area, .date
 		@extends .page-control
 
 	h1
+		font-size: rem(36px)
+		@extends .title-weight
+		@extends .font-lato
+	h2
 		font-size: rem(32px)
 		@extends .title-weight
 		@extends .font-lato
-		text-align: center
-	h2
+	h3
 		font-size: rem(28px)
 		@extends .title-weight
 		@extends .font-lato
-	h3
-		font-size: rem(22px)
-		@extends .title-weight
-		@extends .font-lato
-	h3
+	h4
 		font-size: rem(18px)
 		@extends .title-weight
 		@extends .font-lato
@@ -43,3 +126,13 @@
 		width: auto
 		max-width: 100%
 		margin: auto
+	p
+		code
+			padding: 0
+			padding-top: 0.2em
+			padding-bottom: 0.2em
+			margin: 0
+			color: #d01040
+			font-size: 85%
+			background-color: rgba(0,0,0,0.04)
+			border-radius: 3px

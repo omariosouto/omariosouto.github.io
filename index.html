@@ -1,10 +1,13 @@
 ---
 layout: default
+title: 'Just do It'
+bg-header: 'bg-home-mario-souto.jpg'
+main-tag: 'pages'
+type: 'page'
 ---
-<main>
+
 	<section class="card-list">
 		{% for post in site.posts %}
-		<!-- Card Item -->
 		<div class="card-item card-{{post.main-tag}}">
 			<div class="card-body">
 				<div class="label">
@@ -23,7 +26,6 @@ layout: default
                     {% endfor %}
 				</div>
 			</div>
-		</div><!-- /Card Item -->
+		</div>
 		{% endfor %}
-	</section>
-</main>
+	</section> 

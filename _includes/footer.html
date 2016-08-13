@@ -9,6 +9,7 @@
 <script id="dsq-count-scr" src="//mariosouto.disqus.com/count.js" async></script>
 <!-- All Minified Scripts -->
 <script src="{{ "/assets/js/scripts.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/add-on/jplayer.playlist.min.js"></script>
 <script>
 $( document ).ready(function() {
 	$('.btn-menu, .overlay').click(function() {
@@ -22,5 +23,23 @@ $( document ).ready(function() {
 		overlay.toggleClass('active');
 		html.toggleClass('no-scroll');
 	});
+});
+
+var lastScrollTop = 0;
+var canSee = true;
+var windowHeight = $(window).height()
+
+$(window).scroll(function (event) {
+    var currScroll = $(window).scrollTop();
+    console.log(currScroll);
+    console.log( windowHeight );
+	if(currScroll > windowHeight) {
+		$('.header-blog').removeClass('type-page');
+		$('.btn-menu').removeClass('type-page');
+		console.log('Scroll maior que janelas');
+	} else {
+		$('.header-blog').addClass('type-page');
+		$('.btn-menu').addClass('type-page');
+	}
 });
 </script>
