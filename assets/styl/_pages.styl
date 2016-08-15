@@ -5,19 +5,24 @@
 	justify-content: center
 	flex-direction: column
 	position: relative
+	background-color: #92929b
 
 	&.post
 		height: auto !important
-		margin-top: rem(60px)
+		margin-top: rem(71px)
 		width: 100%
 		position: relative
+		+below(700px)
+			margin-top: 110px
 		.content
 			width: 100%
 			padding-top: rem(175px)
+			padding-bottom: rem(175px)
 
 	&.image
 		background-size: cover
 		background-position: center
+		center
 		background-attachment: fixed
 		&:after
 			content: ''
@@ -57,7 +62,7 @@
 		color: #FFFFFF
 		position: absolute
 		left: 0
-		top: -1px
+		top: 0
 		width: rem(160px) !important
 		height: rem(160px) !important
 		padding: rem(18px) !important
@@ -80,7 +85,7 @@
 
 .page-control
 	width: auto
-	max-width: rem(800px)
+	max-width: rem(900px)
 	float: none
 	display: block
 	margin-right: auto

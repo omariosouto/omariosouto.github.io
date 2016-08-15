@@ -4,19 +4,8 @@
             <span class="text-hide">{Mario Souto}</span>
         </a>
     </h1>
-</header>
-
-<button class="btn-menu card-{{ page.main-tag }} type-{{ page.type }}">
-    <span></span>
-    <span></span>
-    <span></span>
-</button>
-
-
-<aside class="side-menu card-{{ page.main-tag }}">
-    <nav>
-        <h2 class="title">Menu</h2>
-        <ul class="menu-list">
+    <nav class="menu-list">
+        <ul>
             {% for link in site.links %}
             {% if link.external %}
             <li><a class="fa" href="{{ link.url }}">{{ link.title }}</a></li>
@@ -24,7 +13,6 @@
             <li><a class="fa" href="{{ site.url }}{{ link.url }}">{{ link.title }}</a></li>
             {% endif %}
             {% endfor %}
-            <li><a class="fa feed" href="{{ site.url }}/feed.xml" title="Atom/RSS feed">Feed</a></li>
         </ul>
     </nav>
-</aside>
+</header>

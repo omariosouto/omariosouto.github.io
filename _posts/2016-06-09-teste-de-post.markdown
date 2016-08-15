@@ -7,7 +7,6 @@ introduction: Este é um teste do negócio que eu falei
 main-tag: 'dev'
 nav-color: '#637a91'
 tags:
-- jekyll
 - gulp
 - stylus
 - svg

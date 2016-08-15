@@ -26,11 +26,11 @@ permalink: /:title/
 
 # Navigation Menu
 links:
-  - title: Home
-    url: /
-  - title: Tags
-    url: /tags
-  - title: Sobre
+  - title: Artigos
+    url: /articles
+  - title: Projetos
+    url: /projects
+  - title: Sobre mim
     url: /sobre
 
 # exclude
