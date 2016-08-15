@@ -5,7 +5,7 @@ date: 2016-06-11 22:57:25 -0300
 categories: wp front-end
 introduction: Um exemplo de post aleatório
 main-tag: 'random'
-nav-color: '#21759a'
+nav-color: '#c0392b'
 tags:
 - aleatorio
 - randomico
