@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "JavaScript - Exemplo de Post"
 date: 2016-06-11 22:57:25 -0300
 categories: js front-end

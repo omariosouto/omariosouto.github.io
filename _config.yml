@@ -27,9 +27,9 @@ permalink: /:title/
 # Navigation Menu
 links:
   - title: Artigos
-    url: /articles
+    url: /
   - title: Projetos
-    url: /projects
+    url: /projetos
   - title: Sobre mim
     url: /sobre
 
