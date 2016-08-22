@@ -24,6 +24,13 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:title/
 
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
 # Navigation Menu
 links:
   - title: Artigos
