@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "O mundo dos aplicativos hibridos"
+title:  "O mundo dos aplicativos híbridos"
 date: 2016-06-11 22:57:25 -0300
 categories: jekyll update
 introduction: Entenda o que são, quais as vantagens de usar e de quebra aprenda como criar o seu!
