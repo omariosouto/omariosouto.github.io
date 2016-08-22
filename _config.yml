@@ -19,6 +19,13 @@ url: "https://mariosouto.com" # the base hostname & protocol for your site
 twitter_username: marioquemario
 github_username:  mariosout
 
+#minify settings
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
