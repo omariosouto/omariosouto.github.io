@@ -1,4 +1,4 @@
-<% if (theme.disqus) {%>
+
 	<section id="comments" class="comment">
 	  <div id="disqus_thread">
 	  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -6,7 +6,7 @@
 	</section>
 
 	<script type="text/javascript">
-	var disqus_shortname = '<%= theme.disqus_shortname %>';
+	var disqus_shortname = 'mariosouto';
 	(function(){
 	  var dsq = document.createElement('script');
 	  dsq.type = 'text/javascript';
@@ -22,4 +22,3 @@
 	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 	}());
 	</script>
-<% } %>
