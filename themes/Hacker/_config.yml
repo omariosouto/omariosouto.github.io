@@ -1,7 +1,7 @@
 menu:
   Home: /
-  Archives: /archives
-  About Me: /about
+  Feed: /feed.xml
+  Sobre mim: /about
 
 # duoshuo comment
 duoshuo: false
