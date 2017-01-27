@@ -1,7 +1,7 @@
 menu:
   Home: /
-  Feed: /feed.xml
   Sobre mim: /about
+  Feed: /feed.xml
 
 # duoshuo comment
 duoshuo: false
