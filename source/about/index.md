@@ -9,9 +9,7 @@ Minha paixão pela web começou quando ainda pequeno eu pude manter alguns servi
 ## Habilidades
 
 * HTML (Template Engines)
-* CSS (RSCSS
-* ITCSS
-* BEM)
+* CSS (RSCSS, ITCSS, BEM)
 * Preprocessors Concepts
 * Responsive
 * JavaScript (Some Patterns)
