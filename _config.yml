@@ -70,7 +70,7 @@ theme: Hacker
 deploy:
   type: git
   repo: https://github.com/soutomario/soutomario.github.io.git
-  branch: gh-pages
+  branch: master
   message: "Update"
 
 # duoshuo comment
