@@ -79,7 +79,7 @@ duoshuo_name:
 
 # disqus comment
 disqus: true
-disqus_shortname: mariosouto
+disqus_shortname: "mariosouto"
 
 # google analytics
 googleTrackId:
