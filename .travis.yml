@@ -7,7 +7,7 @@ before_install:
 - npm install -g hexo
 install:
 - npm install
-# Configure seu nome de usuário e e-mail
+# Configure seu nome de usuário e e-mail.
 before_script:
 - git config --global user.name 'Mario Souto'
 - git config --global user.email 'mariosoutoskn@gmail.com'
