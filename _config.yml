@@ -72,14 +72,10 @@ deploy:
   repo: https://github.com/soutomario/soutomario.github.io.git
   branch: master
   message: "Update"
-
-# duoshuo comment
-duoshuo: false
-duoshuo_name:
-
-# disqus comment
-disqus: true
-disqus_shortname: "mariosouto"
-
-# google analytics
-googleTrackId: UA-69548205-5
+# Feed
+feed:
+  type: atom
+  path: feed.xml
+  limit: 200
+  hub:
+  content:
