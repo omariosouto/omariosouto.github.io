@@ -1,0 +1,37 @@
+<%
+var title = '';
+if (page.category) title = page.category;
+if (page.tag) title = page.tag;
+if (page.archive){
+  if (page.year) title = page.year + (page.month ? '/' + page.month : '');
+  else title = __('archive_a');
+}
+%>
+
+<article>
+
+  <h2 class="article-title <% if (page.tag){ %> tag<% } else if (page.category){ %> category<% } %>"><%= title %></h2>
+
+  <div class="archive">
+    <% page.posts.each(function(item){ %>
+      <div class="<%= item.layout %> archive">
+        <div class="archive-post">
+          <time datetime="<%= item.date.toDate().toISOString() %>">
+            <a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a>
+          </time>
+          <% if (item.link){ %>
+            <% if (item.title){ %>
+            <h3 class="archive-title"><a href="<%- item.link %>" target="_blank"><span><%= item.title %></span></a></h3>
+            <% } else { %>
+            <h3 class="archive-title"><a href="<%- item.link %>" target="_blank"><span><%= item.link %></span></a></h3>
+            <% } %>
+          <% } else { %>
+            <h3 class="archive-title"><a href="<%- config.root %><%- item.path %>"><span><%= item.title %></span></a></h3>
+          <% } %>
+        </div>
+      </div>
+    <% }); %>
+    <%- partial('pagination') %>
+  </div>
+
+</article>

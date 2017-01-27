@@ -1,0 +1,65 @@
+$siteAColor = #ffffff
+$siteABgColor = #FF6A00
+$siteDescColor = #9e9e9e
+
+header
+  line-height 1.8rem
+  .site-title
+    position relative
+    overflow hidden
+  .logo-site
+    width 120px    
+  .text-hide
+    position absolute
+    left -1000px
+    /* Hide the text. */
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-ident -99999px
+    
+    
+  .site-branding
+    text-align center
+    margin-bottom 2rem
+    font-family "Open Sans", arial, sans-serif
+    letter-spacing 0.1em
+    text-transform uppercase
+
+    .site-title
+      margin 0
+      font-size 1.4rem
+
+      a
+        display inline-block
+        color $siteAColor
+        font-weight bolder
+        line-height 3rem
+        padding 0 1rem
+        -webkit-transition padding 0.3s ease-out
+        transition padding 0.3s ease-out
+
+    .site-description
+      color $siteDescColor
+      font-size 1.3rem
+      margin 1rem 0 0
+
+  .site-navigation
+    text-align center
+
+    ul
+      list-style none
+      padding 0
+      margin 0
+      font-size 1.6em
+
+      li
+        display inline-block
+        margin 0 0.5rem
+
+        a
+          display block
+          color $siteABgColor
+          font-size 1.6rem
+          line-height 2rem
+          padding 0 1rem

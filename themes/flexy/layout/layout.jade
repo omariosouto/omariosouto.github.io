@@ -1,0 +1,11 @@
+doctype html
+html(lang='en-us')
+  head
+    include _head
+    include _mixins
+  body(itemscope, itemtype='https://schema.org/WebPage')
+    header(itemscope, itemtype='https://schema.org/WPHeader')
+      include _header
+    main(itemscope, itemtype='https://schema.org/Blog')
+      include _content
+    include _scripts
