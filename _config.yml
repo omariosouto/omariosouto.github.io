@@ -78,5 +78,11 @@ feed:
   type: atom
   path: feed.xml
   limit: 200
-  hub:
-  content:
+
+# Sitemap
+sitemap:
+    path: sitemap.xml
+    
+# Minify
+html_minifier:
+  exclude: 
