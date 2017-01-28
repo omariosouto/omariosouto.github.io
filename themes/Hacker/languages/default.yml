@@ -1,15 +1,15 @@
-categories: Categories
+categories: Categorias
 tags: Tags
-prev: Prev
-next: Next
-comment: Comments
-archive_a: Archives
-archive_b: "Archives: %s"
+prev: Anterior
+next: Próximo
+comment: Comentários
+archive_a: Arquivos
+archive_b: "Arquivos: %s"
 page: Page %d
-recent_posts: Recent Posts
+recent_posts: Posts Recentes
 
 Home: Home
-Archives: Archives
-About: About
+Archives: Arquivos
+About: Sobre
 Links: Links
 RSS: RSS
