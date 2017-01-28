@@ -7,8 +7,8 @@ title: Mario Souto
 subtitle: Desenvolvedor Front End
 description: CSS Evangelist, and lover of Animations
 author: Mario Souto
-language: 
-timezone:
+language: default
+timezone: America/Sao_Paulo
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -25,7 +25,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: README.md
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -72,6 +72,7 @@ deploy:
   repo: https://github.com/soutomario/soutomario.github.io.git
   branch: master
   message: "Update"
+
 # Feed
 feed:
   type: atom
