@@ -84,5 +84,3 @@ sitemap:
     path: sitemap.xml
     
 # Minify
-html_minifier:
-  exclude: 
