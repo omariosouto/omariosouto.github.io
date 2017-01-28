@@ -83,19 +83,6 @@
 
     </div>
 
-    <div class="share-area">
-      <h3>Compartilhe</h3>
-      <a href="https://twitter.com/intent/tweet?text=&quot;<%= item.title %>&quot;%20<%- config.url %><%- item.path %>%20via%20@marioquemario&amp;hashtags= item.tags[0],item.tags[1],item.tags[2]," onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Compartilhe no Twitter" target="_blank">
-          Twitter
-      </a>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=<%- config.url %><%- item.path %>" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Compartilhe no Facebook" target="_blank">
-          Facebook
-      </a>
-      <a href="https://plus.google.com/share?url=<%- config.url %><%- item.path %>" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Compartilhe no Google+" target="_blank">
-          Google +
-      </a>
-    </div>
-
     <% if (index){ %>
     <div class="article-meta pull-right">
       <span>
@@ -107,6 +94,20 @@
     </div>
     <% } %>
   </div>
+  <% if (index){ %>
+  <div class="share-area">
+    <h3>Compartilhe</h3>
+    <a href="https://twitter.com/intent/tweet?text=&quot;<%= item.title %>&quot;%20<%- config.url %><%- item.path %>%20via%20@marioquemario&amp;hashtags= item.tags[0],item.tags[1],item.tags[2]," onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Compartilhe no Twitter" target="_blank">
+        Twitter
+    </a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=<%- config.url %><%- item.path %>" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Compartilhe no Facebook" target="_blank">
+        Facebook
+    </a>
+    <a href="https://plus.google.com/share?url=<%- config.url %><%- item.path %>" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Compartilhe no Google+" target="_blank">
+        Google +
+    </a>
+  </div>
+  <% } %>
 </article>
 <% if (!index){ %>
 <section id="comments" class="comment">
