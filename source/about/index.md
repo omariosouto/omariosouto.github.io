@@ -31,5 +31,5 @@ Minha paixão pela web começou quando ainda pequeno eu pude criar e manter algu
 ## Contato
 
 * [Facebook](facebook.com/soutomario)
-* [Twitter][twitter.com/marioquemario)
+* [Twitter](twitter.com/marioquemario)
 * [Github](github.com/soutomario)
