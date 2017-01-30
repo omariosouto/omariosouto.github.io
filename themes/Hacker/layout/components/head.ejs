@@ -69,9 +69,9 @@
   
   <meta property="og:site_name" content="<%= config.title %>"/>
   <% if(index) { %>
-  <meta property="og:url" content="<%- config.url %>">
+  <meta property="og:url" content="<%= config.url %>">
   <% } else { %>
-  <meta property="og:url" content="<%- config.url %><%- page.url %>">
+  <meta property="og:url" content="<%= config.url %><%= page.url %>">
   <% } %>
 
   <% if(page.cover) { %>
@@ -79,7 +79,7 @@
   <% } else if(config.cover) { %>
   <meta property="og:image" content="<%= config.cover %>"/>
   <% } else { %>
-  <meta property="og:image" content="<%- config.url %>/assets/img/banner-site.png"/>
+  <meta property="og:image" content="<%= config.url %>/assets/img/banner-site.png"/>
   <% } %>
 
   <link rel="apple-touch-icon" sizes="180x180" href="https://mariosouto.com/assets/favicons/apple-touch-icon.png">
