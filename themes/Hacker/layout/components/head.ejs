@@ -68,7 +68,7 @@
   <% } %>
   
   <meta property="og:site_name" content="<%= config.title %>"/>
-  <meta property="og:url" content="<%- config.url %><%= if(page.path) { page.path } %>">
+  <meta property="og:url" content="<%- config.url %><%= if(page.path) { %> page.path <%= } %> ">
   
 
   <% if(page.cover) { %>
