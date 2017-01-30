@@ -68,7 +68,8 @@
   <% } %>
   
   <meta property="og:site_name" content="<%= config.title %>"/>
-  <meta property="og:url" content="<%- url %>">
+  <meta property="og:url" content="<%- config.url %><%= page.permalink %>">
+  
 
   <% if(page.cover) { %>
   <meta property="og:image" content="<%= page.cover %>" />
