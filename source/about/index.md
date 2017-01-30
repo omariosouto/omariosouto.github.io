@@ -1,6 +1,7 @@
 ---
 title: Sobre Mim
 date: 2017-01-24 00:52:45
+url: /about/
 ---
 Me chamo Mário Souto, nasci na cidade de São Paulo e atualmente sou desenvolvedor front-end. Trabalho na [Agência Digital Pulso](http://www.agenciapulso.com.br/) e sou formado em Análise e Desenvolvimento de sistemas pela UNIP.
 

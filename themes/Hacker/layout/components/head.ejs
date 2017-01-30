@@ -68,16 +68,16 @@
   <% } %>
   
   <meta property="og:site_name" content="<%= config.title %>"/>
-  <% if(index) { %>
-  <meta property="og:url" content="<%= config.url %>">
-  <% } else { %>
+  <% if(page.url) { %>
   <meta property="og:url" content="<%= config.url %><%= page.url %>">
+  <% } else { %>
+  <meta property="og:url" content="<%= config.url %>">
   <% } %>
 
   <% if(page.cover) { %>
-  <meta property="og:image" content="<%= page.cover %>" />
+  <meta property="og:image" content="<%= config.url %>/assets/img/<%= page.cover %>" />
   <% } else if(config.cover) { %>
-  <meta property="og:image" content="<%= config.cover %>"/>
+  <meta property="og:image" content="<%= config.url %>/assets/img/<%= config.cover %>"/>
   <% } else { %>
   <meta property="og:image" content="<%= config.url %>/assets/img/banner-site.png"/>
   <% } %>

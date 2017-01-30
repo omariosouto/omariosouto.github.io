@@ -1,6 +1,9 @@
 ---
 title: Inputs Materializados com CSS
 date: 2016-12-22
+url: /inputs-materializados-com-css/
+description: É possível validar dados com HTML e CSS?
+cover: material-input-css.png
 tags:
 - css
 - js
