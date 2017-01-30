@@ -1,6 +1,7 @@
 <head>
   <meta charset="utf-8">
   <%- autoCanonical(config, page) %>
+  <link rel="alternate" type="application/rss+xml" title="Mario Souto - Desenvolvedor Front End" href="<%= config.url %>/feed.xml" />
   <%
     var title = [];
     if (page.current > 1) {
