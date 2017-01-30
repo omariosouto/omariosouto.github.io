@@ -1,5 +1,4 @@
 <article>
-
   <% if (item.link){ %>
     <% if (item.title){ %>
     <h3 class="article-title"><a href="<%- item.link %>" target="_blank"><span><%= item.title %></span></a></h3>
@@ -95,9 +94,18 @@
     <% } %>
   </div>
   <% if (!index){ %>
+  <% if (item.tags && item.tags.length){ %>
+  <%
+      var twitterTags = [];
+      item.tags.forEach(function(tag){
+          twitterTags.push(tag.name);
+      });
+
+  %>
+  <% } %>
   <div class="share-area">
     <h3>Compartilhe</h3>
-    <a href="https://twitter.com/intent/tweet?text=&quot;<%= item.title %>&quot;%20<%- config.url %>/<%- item.path %>%20via%20@marioquemario&amp;hashtags= <%- item.tags[0] %>,<%- item.tags[1] %>, <%-item.tags[2] %>," onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Compartilhe no Twitter" target="_blank">
+    <a href="  https://twitter.com/intent/tweet?text=&quot;<%= item.title %>&quot;%20<%- config.url %>/<%- item.path %>%20via%20@marioquemario&amp;hashtags=<%- twitterTags.join(',') %>" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Compartilhe no Twitter" target="_blank">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410.155 410.155"><path d="M403.632 74.18c-9.113 4.04-18.573 7.23-28.28 9.537 10.696-10.164 18.738-22.877 23.275-37.067 1.295-4.05-3.105-7.554-6.763-5.385-13.504 8.01-28.05 14.02-43.235 17.862-.882.223-1.79.336-2.703.336-2.766 0-5.455-1.027-7.57-2.89C322.2 42.332 301.422 34.49 279.85 34.49c-9.336 0-18.76 1.456-28.015 4.326C223.163 47.71 201.04 71.36 194.1 100.54c-2.605 10.945-3.31 21.9-2.098 32.56.14 1.225-.44 2.08-.797 2.48-.627.704-1.516 1.107-2.44 1.107-.102 0-.208-.005-.313-.015-62.762-5.83-119.358-36.068-159.363-85.14-2.04-2.503-5.953-2.196-7.58.593C13.678 65.565 9.538 80.937 9.538 96.58c0 23.97 9.63 46.562 26.36 63.03-7.035-1.667-13.844-4.294-20.17-7.807-3.06-1.7-6.824.485-6.867 3.985-.438 35.612 20.412 67.3 51.646 81.57-.63.014-1.258.02-1.888.02-4.95 0-9.964-.477-14.898-1.42-3.446-.658-6.34 2.61-5.27 5.952 10.137 31.65 37.39 54.98 70 60.278-27.065 18.17-58.584 27.753-91.39 27.753l-10.226-.005c-3.15 0-5.816 2.054-6.62 5.106-.79 3.007.667 6.178 3.354 7.74 36.966 21.514 79.13 32.884 121.955 32.884 37.485 0 72.55-7.44 104.22-22.11 29.032-13.448 54.688-32.673 76.254-57.14 20.09-22.792 35.8-49.103 46.692-78.2 10.382-27.738 15.87-57.334 15.87-85.59v-1.346c0-4.537 2.05-8.806 5.63-11.712 13.586-11.03 25.416-24.014 35.16-38.59 2.574-3.85-1.484-8.674-5.718-6.796z" fill="#ff6a00"/></svg>
     </a>
     <a href="https://www.facebook.com/sharer/sharer.php?u=<%- config.url %>/<%- item.path %>" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Compartilhe no Facebook" target="_blank">
