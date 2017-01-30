@@ -68,22 +68,34 @@
   <% } %>
   
   <meta property="og:site_name" content="<%= config.title %>"/>
-<<<<<<< HEAD
   <% if(page.url) { %>
   <meta property="og:url" content="<%= config.url %><%= page.url %>">
   <% } else { %>
   <meta property="og:url" content="<%= config.url %>">
   <% } %>
-=======
-  <meta property="og:url" content="<%= config.url %>">
- 
->>>>>>> e63a98edd7556e0eb7b846af19050596a8ce382c
 
   <% if(page.cover) { %>
   <meta property="og:image" content="<%= config.url %>/assets/img/<%= page.cover %>" />
   <% } else if(config.cover) { %>
   <meta property="og:image" content="<%= config.url %>/assets/img/<%= config.cover %>"/>
   <% } else { %>
+  <meta property="og:image" content="<%= config.url %>/assets/img/banner-site.png"/>
+  <% } %>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://mariosouto.com/assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="https://mariosouto.com/assets/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://mariosouto.com/assets/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="https://mariosouto.com/assets/favicons/manifest.json">
+  <link rel="mask-icon" href="https://mariosouto.com/assets/favicons/safari-pinned-tab.svg" color="#ff6a00">
+  <meta name="msapplication-TileColor" content="#ff6a00">
+  <meta name="msapplication-TileImage" content="https://mariosouto.com/assets/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="<%- config.root %>favicon.ico" rel="icon">
+  <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml">
+  <link rel="stylesheet" href="<%- config.root %>css/style.css" media="screen" type="text/css">
+</head>
+
   <meta property="og:image" content="<%= config.url %>/assets/img/banner-site.png"/>
   <% } %>
 
