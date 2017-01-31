@@ -1,5 +1,11 @@
 <!DOCTYPE HTML>
+
+<% if (item.tags){ %>
+<html lang="pt-BR" itemscope itemtype="http://schema.org/BlogPosting">
+<% } else { %>
 <html lang="pt-BR" itemscope itemtype="http://schema.org/WebPage">
+<% } %>
+
 <%- partial('components/head') %>
 
 <body>
