@@ -8,7 +8,7 @@ if (page.archive){
 }
 %>
 
-<article>
+<article itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
 
   <h2 class="article-title <% if (page.tag){ %> tag<% } else if (page.category){ %> category<% } %>"><%= title %></h2>
 
@@ -16,17 +16,17 @@ if (page.archive){
     <% page.posts.each(function(item){ %>
       <div class="<%= item.layout %> archive">
         <div class="archive-post">
-          <time datetime="<%= item.date.toDate().toISOString() %>">
+          <time itemprop="datePublished" datetime="<%= item.date.toDate().toISOString() %>">
             <a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a>
           </time>
           <% if (item.link){ %>
             <% if (item.title){ %>
-            <h3 class="archive-title"><a href="<%- item.link %>" target="_blank"><span><%= item.title %></span></a></h3>
+            <h3 class="archive-title" itemprop="name"><a href="<%- item.link %>" target="_blank"><span><%= item.title %></span></a></h3>
             <% } else { %>
-            <h3 class="archive-title"><a href="<%- item.link %>" target="_blank"><span><%= item.link %></span></a></h3>
+            <h3 class="archive-title" itemprop="name"><a href="<%- item.link %>" target="_blank"><span><%= item.link %></span></a></h3>
             <% } %>
           <% } else { %>
-            <h3 class="archive-title"><a href="<%- config.root %><%- item.path %>"><span><%= item.title %></span></a></h3>
+            <h3 class="archive-title" itemprop="name"><a href="<%- config.root %><%- item.path %>"><span><%= item.title %></span></a></h3>
           <% } %>
         </div>
       </div>
