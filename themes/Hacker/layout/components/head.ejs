@@ -35,15 +35,19 @@
   <% } %>
 
   <% if (page.description){ %>
+  <meta itemprop="description" content="<%= page.description %>">
   <meta name="description" content="<%= page.description %>">
   <meta property="og:description" content="<%= page.description %>">
   <% } else if (config.description){ %>
+  <meta itemprop="description" content="<%= config.description %>">
   <meta name="description" content="<%= config.description %>">
   <meta property="og:description" content="<%= config.description %>">
   <% } else if (page.excerpt){ %>
+  <meta itemprop="description" content="<%= strip_html(page.excerpt).replace(/^\s*/, '').replace(/\s*$/, '') %>">
   <meta name="description" content="<%= strip_html(page.excerpt).replace(/^\s*/, '').replace(/\s*$/, '') %>">
   <meta property="og:description" content="<%= strip_html(page.excerpt).replace(/^\s*/, '').replace(/\s*$/, '') %>">
   <% } else if (page.content){ %>
+  <meta itemprop="description" content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>">
   <meta name="description" content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>">
   <meta property="og:description" content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>">
   <% } %>
@@ -73,6 +77,7 @@
   <% } %>
   
   <meta property="og:site_name" content="<%= config.title %> - <%= config.subtitle %>"/>
+  <meta itemprop="name" content="<%= config.title %> - <%= config.subtitle %>"/>
   <% if(page.url) { %>
   <meta property="og:url" content="<%= config.url %><%= page.url %>">
   <% } else { %>
@@ -80,10 +85,13 @@
   <% } %>
 
   <% if(page.cover) { %>
+  <meta itemprop="image" content="<%= config.url %>/assets/img/<%= page.cover %>" />
   <meta property="og:image" content="<%= config.url %>/assets/img/<%= page.cover %>" />
   <% } else if(config.cover) { %>
+  <meta itemprop="image" content="<%= config.url %>/assets/img/<%= config.cover %>"/>
   <meta property="og:image" content="<%= config.url %>/assets/img/<%= config.cover %>"/>
   <% } else { %>
+  <meta itemprop="image" content="<%= config.url %>/assets/img/banner-site.png"/>
   <meta property="og:image" content="<%= config.url %>/assets/img/banner-site.png"/>
   <% } %>
 
