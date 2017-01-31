@@ -1,22 +1,22 @@
-<article>
+<article itemprop="articleBody">
   <% if (item.link){ %>
     <% if (item.title){ %>
-    <h3 class="article-title"><a href="<%- item.link %>" target="_blank"><span><%= item.title %></span></a></h3>
+    <h2 class="article-title" itemprop="name"><a href="<%- item.link %>" target="_blank"><span><%= item.title %></span></a></h2>
     <% } else { %>
-    <h3 class="article-title"><a href="<%- item.link %>" target="_blank"><span><%= item.link %></span></a></h3>
+    <h2 class="article-title" itemprop="name"><a href="<%- item.link %>" target="_blank"><span><%= item.link %></span></a></h2>
     <% } %>
   <% } else { %>
     <% if (index){ %>
-    <h3 class="article-title"><a href="<%- config.root %><%- item.path %>"><span><%= item.title %></span></a></h3>
+    <h2 class="article-title" itemprop="name"><a href="<%- config.root %><%- item.path %>"><span><%= item.title %></span></a></h2>
     <% } else { %>
-    <h3 class="article-title"><span><%= item.title %></span></h3>
+    <h2 class="article-title" itemprop="name"><span><%= item.title %></span></h2>
     <% } %>
   <% } %>
 
   <div class="article-top-meta">
     <span class="posted-on">
       <a href="<%- config.root %><%- item.path %>" rel="bookmark">
-        <time class="entry-date published" datetime="<%= item.date.toDate().toISOString() %>">
+        <time class="entry-date published" itemprop="datePublished" datetime="<%= item.date.toDate().toISOString() %>">
           <%= item.date.format(config.date_format) %>
         </time>
       </a>
@@ -114,6 +114,17 @@
     <a href="https://plus.google.com/share?url=<%- config.url %>/<%- item.path %>" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Compartilhe no Google+" target="_blank">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 491.858 491.858"><path d="M377.472 224.957H201.32v58.718h107.47c-16.032 51.048-63.714 88.077-120.055 88.077-69.492 0-125.823-56.335-125.823-125.824 0-69.492 56.333-125.823 125.823-125.823 34.994 0 66.645 14.29 89.452 37.346l42.622-46.327c-34.04-33.355-80.65-53.93-132.075-53.93C84.5 57.194 0 141.694 0 245.93s84.5 188.737 188.736 188.737c91.307 0 171.248-64.844 188.737-150.99V224.96zM491.858 224.857h-36.03v-36.03H424.94v36.03h-36.03v30.883h36.03v36.032h30.887V255.74h36.03" fill="#ff6a00"/></svg>
     </a>
+  </div>
+  <div class="author-area" itemprop="author">
+      <div class="description" itemscope itemtype="http://schema.org/Person">
+          <!-- <img itemprop="image" class="img-rounded" src="/assets/img/blog-author.jpg" alt="soutomario"> -->
+          <p class="littletitle">Autor</p>
+          <h3 class="name">
+              <a itemprop="name" href="http://github.com/soutomario">Mario Souto</a>
+          </h3>
+          <p class="desc"><span itemprop="jobTitle">Desenvolvedor Front End</span></p>
+          <a class="email" href="https://github.com/soutomario">github.com/soutomario</a>
+      </div>
   </div>
   <% } %>
 </article>
