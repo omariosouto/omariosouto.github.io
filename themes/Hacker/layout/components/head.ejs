@@ -30,6 +30,21 @@
   %>
   <title><%= title.join(' - ') %></title>
 
+  <script type="application/ld+json">
+  { 
+    "@context": "http://schema.org", 
+    "@type": "WebSite", 
+    "url": "<% if(page.url) { %><%= config.url %><%= page.url %><% } else { %><%= config.url %><% } %>", 
+    "name": "<%= title.join(' - ') %>",
+     "author": {
+        "@type": "Person",
+        "name": "Mario Souto"
+      },
+    "description": "<%= config.description %>"
+  }
+  </script>
+
+
   <% if (config.author){ %>
   <meta name="author" content="<%= config.author %>">
   <% } %>
