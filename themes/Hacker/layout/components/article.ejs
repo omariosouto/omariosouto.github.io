@@ -1,4 +1,4 @@
-<article itemprop="articleBody">
+<article <% if (index){ %>itemprop="articleBody"<% } %>>
   <% if (item.link){ %>
     <% if (item.title){ %>
     <h2 class="article-title" itemprop="name"><a href="<%- item.link %>" target="_blank"><span><%= item.title %></span></a></h2>
