@@ -78,6 +78,7 @@ article
       max-width: 100%
       height auto
       margin 1rem auto
+      display block
 
   .article-footer
     margin-bottom: 1.2rem;
@@ -161,11 +162,14 @@ article
     text-align: center;
     padding: 50px 0 20px 0;
     a
-      margin: 0 5px;
-
-    .icon
+      margin: 0 10px;
       width: 25px;
       height: 25px;
+      display inline-block
+
+    .icon
+      width: inherit;
+      height: inherit;
       
     h3
       font-size: 2rem;
@@ -202,12 +206,37 @@ article
     .table-striped tbody tr:nth-of-type(odd)
       background-color:#f2f2f2
 
+.img-perfil
+  border-radius 100%
+  display: block;
 
-
-
-
-
-
+.author-area
+  margin: 30px 0;
+  padding-top: 30px;
+  border-top 4px solid #ff6a00
+  .img-perfil
+    max-width: 200px;
+  .description *
+    margin-left auto
+    margin-right auto
+    text-align: center; 
+  .littletitle
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 0;
+    line-height: 1.5;
+  .name
+    font-size 1.8rem
+  .desc
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.4;
+  .contact
+    font-size: 1.5rem;
+  .email
+    margin 0
 
 
 
