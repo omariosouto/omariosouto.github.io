@@ -16,15 +16,14 @@ Minha paixão pela web começou quando ainda pequeno eu pude criar e manter algu
 * Preprocessors Concepts
 * Responsive
 * JavaScript (Some Patterns)
+* PHP (WordPress)
+* NodeJS
 * Semantic web
 * Web accessibility
 * SEO
 * Client Side performance
 * Cross Browser/Device/SO
 * Kanban
-
-## Ferramentas
-
 * AngularJS
 * ReactJS
 * Git
