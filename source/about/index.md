@@ -29,6 +29,12 @@ Minha paixão pela web começou quando ainda pequeno eu pude criar e manter algu
 * Git
 * Task Runners
 * Tests
+
+## Talks
+
+### São Paulo
+* 07/03/2017 Meetup CSS (Front End Week) https://mariosouto.com/slides-meetup-css-front-end-week
+* 01/04/2017 NetCoders - Novatec https://mariosouto.com/dando-vida-aplicacoes-com-animacoes/
  
 ## Contato
 
