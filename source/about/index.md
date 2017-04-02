@@ -33,8 +33,8 @@ Minha paixão pela web começou quando ainda pequeno eu pude criar e manter algu
 ## Talks
 
 ### São Paulo
-* 07/03/2017 Meetup CSS (Front End Week) https://mariosouto.com/slides-meetup-css-front-end-week
-* 01/04/2017 NetCoders - Novatec https://mariosouto.com/dando-vida-aplicacoes-com-animacoes/
+* 07/03/2017 Meetup CSS (Front End Week) [Icônico SVG](https://mariosouto.com/slides-meetup-css-front-end-week)
+* 01/04/2017 NetCoders - Novatec [Dando vida para Aplicações com Animações](https://mariosouto.com/dando-vida-aplicacoes-com-animacoes/)
  
 ## Contato
 
