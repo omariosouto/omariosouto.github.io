@@ -3,6 +3,7 @@ title: Inputs Materializados com CSS
 date: 2016-12-22
 url: /inputs-materializados-com-css/
 description: É possível validar dados com HTML e CSS?
+external: _self
 cover: material-input-css.png
 tags:
 - css
@@ -28,7 +29,7 @@ Vale ressaltar que **isso é um experimento**, e que experimentos são uma fonte
 ### Data Form Validations
 Faz algum tempo que muitas pessoas utilizam o atributo **required** do HTML5 para fazer algumas validações simples em formulários como no exemplo abaixo:
 
-<p data-height="265" data-theme-id="dark" data-slug-hash="bBzZXj" data-default-tab="html,result" data-user="soutomario" data-embed-version="2" data-pen-title="HTML5 Data Form Validations" class="codepen">See the Pen <a href="http://codepen.io/soutomario/pen/bBzZXj/">HTML5 Data Form Validations</a> by Mario Souto (<a href="http://codepen.io/soutomario">@soutomario</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="265" data-theme-id="dark" data-slug-hash="bBzZXj" data-default-tab="html,result" data-user="omariosouto" data-embed-version="2" data-pen-title="HTML5 Data Form Validations" class="codepen">See the Pen <a href="http://codepen.io/omariosouto/pen/bBzZXj/">HTML5 Data Form Validations</a> by Mario Souto (<a href="http://codepen.io/omariosouto">@omariosouto</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 As validações com required são bem bacanas, pois elas pegam o [type] do input e tiram por base dele se o campo foi preenchido corretamente ou não, validando e-mails, texts e etc…
@@ -48,7 +49,7 @@ Dessa vez nosso objetivo não é o trapézio descendente e sim esse cara aqui:
 
 Indo pelo passo a passo, vamos começar pela estrutura HTML que será bem simples:
 
-<script src="https://gist.github.com/soutomario/8fc58a5149603e00d02288ebdeb2d509.js"></script>
+<script src="https://gist.github.com/omariosouto/8fc58a5149603e00d02288ebdeb2d509.js"></script>
 
 1 - Uma tag section e uma form
 2 - Um input-container para agrupar o conjunto da label com o input
@@ -60,28 +61,28 @@ Agora vem a parte do amor com CSS <3
 
 ### Base
 
-<script src="https://gist.github.com/soutomario/184bcff2e14c6e4a45e1b6e0cf7c7a65.js"></script>
+<script src="https://gist.github.com/omariosouto/184bcff2e14c6e4a45e1b6e0cf7c7a65.js"></script>
 
 A estrutura é bem simples, basicamente aplicamos um estilo no input para ele se parecer com o do Material Design e posicionamentos de forma absoluta o label a esquerda do input-container e centralizado em relação ao input.
 
 ### Interação
 
-<script src="https://gist.github.com/soutomario/302b568ba17d5a62c954ee997d70b98b.js"></script>
+<script src="https://gist.github.com/omariosouto/302b568ba17d5a62c954ee997d70b98b.js"></script>
 
 Aqui é onde acontece a mágica, nós validamos quando o input for valido no HTML e pelo CSS verificamos esse estado, adicionando um efeito ao label que é o elemento seguinte ao input.
 
 E para finalizar com um toque especial vamos dar um tapa no visual:
 
-<script src="https://gist.github.com/soutomario/e3013895740025ea91715bbe643138fb.js"></script>
+<script src="https://gist.github.com/omariosouto/e3013895740025ea91715bbe643138fb.js"></script>
 
 E finalmente aqui está o resultado do nosso experimento!
 
-<p data-height="357" data-theme-id="dark" data-slug-hash="LbENBr" data-default-tab="html,result" data-user="soutomario" data-embed-version="2" data-pen-title="Material Design Input - CSS Pure" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/soutomario/pen/LbENBr/">Material Design Input - CSS Pure</a> by Mario Souto (<a href="http://codepen.io/soutomario">@soutomario</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="357" data-theme-id="dark" data-slug-hash="LbENBr" data-default-tab="html,result" data-user="omariosouto" data-embed-version="2" data-pen-title="Material Design Input - CSS Pure" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/omariosouto/pen/LbENBr/">Material Design Input - CSS Pure</a> by Mario Souto (<a href="http://codepen.io/omariosouto">@omariosouto</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 Bom, espero que tenham gostado do post em breve trarei mais conteúdos, quaisquer dúvidas deixem nos comentários ou me chamem em alguma rede social!
 
-- [Facebook](https://www.facebook.com/soutomario)
+- [Facebook](https://www.facebook.com/omariosouto)
 
 
 ## Referências:
