@@ -83,4 +83,13 @@ feed:
 sitemap:
     path: sitemap.xml
     
-# Minify
+# Stylus
+## Docs: https://github.com/hexojs/hexo-renderer-stylus
+stylus:
+  compress: true
+  sourcemaps:
+    comment: true
+    inline: true
+    sourceRoot: ''
+    basePath: .
+
