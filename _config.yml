@@ -79,7 +79,7 @@ feed:
   path: feed.xml
   limit: 200
 
-# Sitemap:
+# Sitemap
 sitemap:
     path: sitemap.xml
     
