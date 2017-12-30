@@ -3,8 +3,8 @@ language: node_js
 branches:
   only:
   - develop
-before_install:
-- npm install -g hexo
+# before_install:
+# - npm install -g hexo
 install:
 - npm install
 # Configure seu nome de usuário e e-mail.
@@ -12,7 +12,7 @@ before_script:
 - git config --global user.name 'Mario Souto'
 - git config --global user.email 'mariosoutoskn@gmail.com'
 script:
-- hexo generate
+- ./node_modules/.bin/hexo generate
 # Configure a Branch a ser feito o deploy
 after_success:
 - mkdir .deploy
