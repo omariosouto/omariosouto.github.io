@@ -1,5 +1,4 @@
 language: node_js
-  - "8"
 # Adicione a branch onde está a instalação do Hexo
 branches:
   only:
