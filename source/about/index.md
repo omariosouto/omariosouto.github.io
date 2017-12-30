@@ -1,5 +1,5 @@
 ---
-title: Sobre Mim
+title: Sobre
 date: 2017-01-24 00:52:45
 url: /about/
 description: É possível validar dados com HTML e CSS?
