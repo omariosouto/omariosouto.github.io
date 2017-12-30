@@ -3,14 +3,14 @@ title: Inputs Materializados com CSS
 date: 2016-12-22
 url: /inputs-materializados-com-css/
 description: É possível validar dados com HTML e CSS?
-external: _self
 cover: material-input-css.png
+category: css
 tags:
 - css
 - js
 - front
 ---
-Depois de muita luta e vencer a faculdade, cá estou eu escrevendo meu primeiro post que dedico ao @afonsopacifer (pela insistência em me motivar a escrever). Bom eu sempre usei Android e acho muito mágico o que a galera faz nos aplicativos e como algumas animações violam o que eu considero como física do front-end.
+Depois de muita luta e vencer a faculdade, cá estou eu escrevendo meu primeiro post que dedico ao [@afonsopacifer](https://twitter.com/afonsopacifer/) (pela insistência em me motivar a escrever). Bom eu sempre usei Android e acho muito mágico o que a galera faz nos aplicativos e como algumas animações violam o que eu considero como física do front-end.
 
 <!-- more --> 
 
@@ -92,5 +92,3 @@ Bom, espero que tenham gostado do post em breve trarei mais conteúdos, quaisque
 * https://developer.mozilla.org/pt-BR/docs/Web/CSS/:valid
 * http://materializecss.com/forms.html
 
-## Post Original:
-* http://cssbrasil.org/inputs-materializados-com-css/

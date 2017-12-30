@@ -1,0 +1,12 @@
+.siteMain {
+    float: left;
+    width: "calc(100% - %s)" % $asideWidth;
+    margin-left: $asideWidth;
+    padding-top: 50px;
+    min-height: calc(100vh - 132px);
+    @media (max-width: $smallPoint) {
+        width: 100%;
+        padding-top: 0;
+        margin-left: auto;
+    }
+}

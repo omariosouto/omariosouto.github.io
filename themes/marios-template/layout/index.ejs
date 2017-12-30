@@ -1,0 +1,49 @@
+<ul class="postsGrid">
+    <% page.posts.each(function(item){ %>
+    <li class="postsGrid__item">
+        <article class="cardPost">
+            <header class="cardPost__header">
+                <a class="cardPost__wrapLink" href="<%- item.url %>" target="<%= !!item.external === true ? '_blank' : '_self' %>">
+                    <h1 class="cardPost__title"><%= item.title %></h1>
+                </a>
+                <div>
+                    <%
+                        var categories = [];
+                        item.categories.map(function(category){
+                            categories.push(`<a class="cardPost__category" href="${config.root}${category.path}">${category.name}</a>`);
+                        });
+                    %>
+                    <%- categories.join(' / ') %>
+                </div>
+
+                <time class="cardPost__date" datetime="<%= item.date.toDate().toISOString() %>"><%= item.date.format(config.date_format) %></time>
+                <%- 
+                    !!item.external === true
+                    ? `<a class="cardPost__external" href="${item.url}" target="_blank"><strong>[ ${item.external} ]</strong></a>`
+                    : ``
+                %>
+            </header>
+            <p class="cardPost__description">
+                <a class="cardPost__wrapLink" href="<%- item.url %>" target="<%= !!item.external === true ? '_blank' : '_self' %>">
+                    <%= item.description %>
+                </a>
+            </p>
+            <footer class="cardPost__footer">
+                <ul class="cardPost__tags">
+                    <%
+                        var tags = [];
+                        item.tags.forEach(function(tag){
+                            tags.push(`
+                                <li class="cardPost__tag">
+                                    <a class="cardPost__tagLink" href="${config.root}${tag.path}">${tag.name}</a>
+                                </li>
+                            `);
+                        });
+                    %>
+                    <%- tags.join('') %>
+                </ul>
+            </footer>
+        </article>  
+    </li>
+    <% }); %>
+</ul>

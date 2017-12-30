@@ -1,0 +1,16 @@
+# Read More text
+excerpt_link: Leia mais...
+
+username:
+  site    : omariosouto 
+  twitter : omariosouto
+  github  : omariosouto
+  facebook: omariosouto
+  linkedin: omariosouto
+
+description: Front end Developer, CSS Evangelist, JavaScript Enthusiast, Speaker, Writer and lover of new challenges.
+
+menu:
+  Home : /
+  Sobre: /about
+  Feed : /feed.xml

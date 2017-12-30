@@ -1,0 +1,124 @@
+.globalHeader {
+	width: $asideWidth;
+	height: 100%;
+	height: 100vh;
+	overflow: auto;
+	padding: 15px;
+	background-color: #f6f6f6;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	border-top: 4px solid #FF6A00;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	@media(max-width: $smallPoint) {
+		width: auto;
+		display block;
+		float: none;
+		position: static;
+		height: 60px;
+		overflow: hidden;
+		padding: 10px;
+		padding-right: 40px;
+		// box-shadow: 0 -3px 9px #000;
+	}
+}
+.globalHeader__title {
+	color: #424242;
+	font-size: 1.5rem;
+	text-align: center;
+	@media(max-width: $smallPoint) {
+		display: none;
+		vertical-align: top;
+	}
+}
+.globalHeader__logo {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	@media(max-width: $smallPoint) {
+		width: 40px;
+		display: inline-block;
+    	transform: translate(0px, -2px);
+	}
+}
+.globalHeader__logoText {
+	@media(max-width: $smallPoint) {
+		display: none;
+	}
+}
+.globalHeader__description {
+	text-align: center;
+	color: #6a737d;
+	line-height: 1.5;
+	flex: 1;
+	@media(max-width: $smallPoint) {
+		display: none;
+	}
+}
+
+.globalHeader__navMenu {
+	@media(max-width: $smallPoint) {
+		transform: translate(0,-5px);
+		float: right;
+		vertical-align: top;
+	}
+}
+.globalHeader__menu {
+	text-align: justify;
+	padding: 0;
+	color: #424242;
+	@media(max-width: $smallPoint) {
+		margin: 0;
+	}
+}
+.globalHeader__menu:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+}
+.globalHeader__item {
+	display: block;
+	@media(max-width: $smallPoint) {
+		display inline-block	
+	}
+}
+.globalHeader__link {
+	text-decoration: none;
+	color: currentColor;
+	transition: .5s;
+	display: block;
+	padding: 15px;
+	padding-left: 30px;
+	position: relative;
+	@media(max-width: $smallPoint) {
+		padding-left initial
+		padding 15px 10px
+	}
+}
+.globalHeader__icon {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	fill: #424242;
+	left: 0;
+	top: 4px;
+	bottom: 0;
+	margin: auto;
+	@media(max-width: $smallPoint) {
+		display none	
+	}
+}
+.globalHeader__link:focus,
+.globalHeader__link:hover {
+	opacity: .5;
+}
+.globalHeader__socialLinks {
+	margin-top: 50px;
+	margin-bottom 0;
+	@media(max-width: $smallPoint) {
+		display: none;
+	}
+}

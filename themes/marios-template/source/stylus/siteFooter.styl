@@ -1,0 +1,18 @@
+.siteFooter {
+    float: left;
+    width: "calc(100% - %s)" % $asideWidth;
+    margin-left: $asideWidth;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #42474f;
+    @media (max-width: $smallPoint) {
+        width: 100%;
+        margin-left: auto;
+    }
+}
+.siteFooter__info  {
+    color: #FFFFFF;
+    margin: 0;
+    line-height: 1.5;
+}

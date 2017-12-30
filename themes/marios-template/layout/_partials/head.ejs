@@ -1,0 +1,115 @@
+<meta charset="utf-8">
+<%- autoCanonical(config, page) %>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<%- partial('title', { page: page })%>
+
+<!--Aditional Settings -->
+<script type="application/ld+json">
+{ 
+    "@context": "http://schema.org", 
+    "@type": "WebSite", 
+    "url": "<% if(page.url) { %><%= config.url %><%= page.url %><% } else { %><%= config.url %><% } %>", 
+    "name": "<%= global.title.join(' - ') %>",
+    "author": {
+        "@type": "Person",
+        "name": "Mario Souto"
+    },
+    "description": "<%= config.description %>"
+}
+</script>
+
+
+<% if (config.author){ %>
+<meta name="author" content="<%= config.author %>">
+<% } %>
+
+<% if (page.description){ %>
+<meta itemprop="description" content="<%= page.description %>">
+<meta name="description" content="<%= page.description %>">
+<meta property="og:description" content="<%= page.description %>">
+<% } else if (config.description){ %>
+<meta itemprop="description" content="<%= config.description %>">
+<meta name="description" content="<%= config.description %>">
+<meta property="og:description" content="<%= config.description %>">
+<% } else if (page.excerpt){ %>
+<meta itemprop="description" content="<%= strip_html(page.excerpt).replace(/^\s*/, '').replace(/\s*$/, '') %>">
+<meta name="description" content="<%= strip_html(page.excerpt).replace(/^\s*/, '').replace(/\s*$/, '') %>">
+<meta property="og:description" content="<%= strip_html(page.excerpt).replace(/^\s*/, '').replace(/\s*$/, '') %>">
+<% } else if (page.content){ %>
+<meta itemprop="description" content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>">
+<meta name="description" content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>">
+<meta property="og:description" content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>">
+<% } %>
+
+<% if (page.keywords){ %>
+<meta name="keywords" content="<%= page.keywords %>,<%= config.keywords %>">
+<% } else if (config.keywords){ %>
+<meta name="keywords" content="<%= config.keywords %>">
+<% } else if (page.tags){%>
+<%
+    var keywords = [];
+    page.tags.forEach(function(tag){
+    keywords.push(tag.name);
+    });
+%>
+<meta name="keywords" content="<%= keywords.join(",") %>">
+<% } %>
+
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<% if (page.title){ %>
+    <meta property="og:title" content="<%= page.title %>"/>
+<% } else { %>
+    <meta property="og:title" content="<%= config.title %>"/>
+<% } %>
+
+<meta property="og:site_name" content="<%= config.title %> - <%= config.subtitle %>"/>
+<meta itemprop="name" content="<%= config.title %> - <%= config.subtitle %>"/>
+<% if(page.url) { %>
+<meta property="og:url" content="<%= config.url %><%= page.url %>">
+<% } else { %>
+<meta property="og:url" content="<%= config.url %>">
+<% } %>
+
+<% if(page.cover) { %>
+<meta itemprop="image" content="<%= config.url %>/assets/img/<%= page.cover %>" />
+<meta property="og:image" content="<%= config.url %>/assets/img/<%= page.cover %>" />
+<% } else if(config.cover) { %>
+<meta itemprop="image" content="<%= config.url %>/assets/img/<%= config.cover %>"/>
+<meta property="og:image" content="<%= config.url %>/assets/img/<%= config.cover %>"/>
+<% } else { %>
+<meta itemprop="image" content="<%= config.url %>/assets/img/banner-site.png"/>
+<meta property="og:image" content="<%= config.url %>/assets/img/banner-site.png"/>
+<% } %>
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://mariosouto.com/assets/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://mariosouto.com/assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://mariosouto.com/assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://mariosouto.com/assets/favicons/manifest.json">
+<link rel="mask-icon" href="https://mariosouto.com/assets/favicons/safari-pinned-tab.svg" color="#ff6a00">
+<meta name="msapplication-TileColor" content="#ff6a00">
+<meta name="msapplication-TileImage" content="https://mariosouto.com/assets/favicons/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link href="<%- config.root %>favicon.ico" rel="icon">
+<link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml">
+<!-- ./Aditional Settings -->
+
+
+<%- css('stylus/app') %>
+
+<!-- Google Analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-69548205-5', 'auto');
+    ga('send', 'pageview');
+</script>

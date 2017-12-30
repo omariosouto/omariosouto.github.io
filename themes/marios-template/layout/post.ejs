@@ -1,0 +1,79 @@
+<article class="contentArea highlightArea">
+    <header class="contentArea__header">
+        <h1 class="contentArea__headerTitle"><%- page.title %></h1>
+        <time datetime="<%= page.date.toDate().toISOString() %>"><%= page.date.format(config.date_format) %></time>
+    </header>
+    <div class="contentContainer">
+        <%- page.content %>
+    </div> 
+</article>
+
+
+<!-- Share Area -->
+<section class="shareArea contentContainer">
+    <h3 class="shareArea__title">Gostou? Compartilhe \o</h3>
+    <%
+        var twitterTags = [];
+        page.tags.forEach(function(tag){
+            twitterTags.push(tag.name);
+        });
+    %>
+    <ul class="shareArea__list">
+        <li class="shareArea__listItem">
+            <a class="shareArea__listLink" href="  https://twitter.com/intent/tweet?text=&quot;<%= page.title %>&quot;%20<%- config.url %>/<%- page.url %>%20via%20@omariosouto&amp;hashtags=<%- twitterTags.join(',') %>" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Compartilhe no Twitter" target="_blank">
+                <svg class="shareArea__listIcon" xmlns="http://www.w3.org/2000/svg" >
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter-icon"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="shareArea__listItem">
+            <a class="shareArea__listLink" href="https://www.facebonok.com/sharer/sharer.php?u=<%- config.url %>/<%- page.url %>" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Compartilhe no Facebook" target="_blank">
+                <svg class="shareArea__listIcon" xmlns="http://www.w3.org/2000/svg" >
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook-icon"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="shareArea__listItem">
+            <a class="shareArea__listLink" href="https://www.linkedin.com/cws/share?url=<%- config.url %><%- page.url %>" onclick="window.open(this.href, 'linkedin-share', 'width=490,height=530');return false;" title="Compartilhe no Linkedin" target="_blank">
+                <svg class="shareArea__listIcon" xmlns="http://www.w3.org/2000/svg" >
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin-icon"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</section>
+
+<!-- Author Area -->
+<section class="authorArea">
+    <h3 class="authorArea__call authorArea__item">Autor</h3>    
+    <img class="authorArea__image authorArea__item circle" src="https://mariosouto.com/assets/img/mario-souto-blog-author.jpg" alt="Mario Souto - Desenvolvedor Front">
+    <h2 class="authorArea__title authorArea__item" >Mario Souto</h2>
+    <h3 class="authorArea__subTitle authorArea__item">Desenvolvedor Front End</h3>
+    <a class="authorArea__externalLink authorArea__item" href="https://github.com/omariosouto">github.com/omariosouto</a>
+</section>
+
+
+<!-- Comments Area -->
+<section class="commentsArea contentContainer" id="comments">
+    <h3 class="commentsArea__title" >Comentários</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>    
+<script type="text/javascript">
+var disqus_shortname = 'mariosouto';
+(function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
