@@ -38,7 +38,8 @@ Minha paixão pela web começou quando ainda pequeno eu pude criar e manter algu
 
 * 07/03/2017 Meetup CSS (Front End Week) [Icônico SVG](https://mariosouto.com/slides-meetup-css-front-end-week)
 * 01/04/2017 NetCoders - Novatec [Dando vida para Aplicações com Animações](https://mariosouto.com/dando-vida-aplicacoes-com-animacoes/)
- 
+* 02/12/2017 Frontinfloripa [O acoplamento, a mensageria e o Redux](https://docs.google.com/presentation/d/1KEL1RqzsHcZ6MuJ-cGf1fOs_7GxSvEWTe32s_ehHVrQ/edit?usp=sharing)
+
 ## Contato
 
 * [Facebook](https://facebook.com/omariosouto)
