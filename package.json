@@ -5,7 +5,11 @@
   "hexo": {
     "version": "3.4.4"
   },
+  "scripts": {
+    "deploy": "rm -rf ./deploy_git && hexo deploy"
+  },
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "hexo": "^3.2.0",
     "hexo-auto-canonical": "^0.1.0",
     "hexo-deployer-git": "^0.3.1",
