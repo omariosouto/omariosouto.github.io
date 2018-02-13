@@ -1,0 +1,33 @@
+language: node_js
+
+# Adicione a branch onde está a instalação do Hexo
+branches:
+  only:
+  - develop
+
+before_install:
+- npm install -g hexo
+
+install:
+- npm install
+
+# Configure seu nome de usuário e e-mail
+before_script:
+- git config --global user.name 'Mario Souto'
+- git config --global user.email 'soutomarios@gmail.com'
+
+
+script:
+- hexo generate
+
+# Configure a Branch a ser feito o deploy
+after_success:
+- mkdir .deploy
+- cd .deploy
+- git clone --depth 1 --branch develop --single-branch $DEPLOY_REPO . || (git init && git remote add -t develop origin $DEPLOY_REPO)
+- rm -rf ./*
+- cp -r ../public/* .
+- git add -A .
+- git commit -m 'Site updated'
+- git branch -m develop
+- git push -q -u origin develop
