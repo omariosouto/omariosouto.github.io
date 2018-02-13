@@ -1,4 +1,6 @@
 language: node_js
+node_js:
+- 8.0.0
 
 # Adicione a branch onde está a instalação do Hexo
 branches:
