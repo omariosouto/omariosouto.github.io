@@ -1,0 +1,4 @@
+# Mario Souto
+User-agent: *
+Allow: /
+Sitemap: https://mariosouto.com/sitemap.xml

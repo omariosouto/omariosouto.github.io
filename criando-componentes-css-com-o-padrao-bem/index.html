@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<link rel="canonical" href="https://mariosouto.com/criando-componentes-css-com-o-padrao-bem/"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+<title>Criando componentes CSS com o padrão BEM - Mario Souto - Desenvolvedor Front End</title>
+
+<!--Aditional Settings -->
+<script type="application/ld+json">
+{ 
+    "@context": "http://schema.org", 
+    "@type": "WebSite", 
+    "url": "https://mariosouto.comhttp://blog.alura.com.br/criando-componentes-css-com-padrao-bem/", 
+    "name": "Criando componentes CSS com o padrão BEM - Mario Souto - Desenvolvedor Front End",
+    "author": {
+        "@type": "Person",
+        "name": "Mario Souto"
+    },
+    "description": "CSS Evangelist, and lover of Animations"
+}
+</script>
+
+
+
+<meta name="author" content="Mario Souto">
+
+
+
+<meta itemprop="description" content="Muita gente me pergunta como escrever CSS de forma organizada. Nesse post fiz um passo a passo para usar uma das formas mais conhecidas.">
+<meta name="description" content="Muita gente me pergunta como escrever CSS de forma organizada. Nesse post fiz um passo a passo para usar uma das formas mais conhecidas.">
+<meta property="og:description" content="Muita gente me pergunta como escrever CSS de forma organizada. Nesse post fiz um passo a passo para usar uma das formas mais conhecidas.">
+
+
+
+
+<meta name="keywords" content="front end,css,bem">
+
+
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+    <meta property="og:title" content="Criando componentes CSS com o padrão BEM"/>
+
+
+<meta property="og:site_name" content="Mario Souto - Desenvolvedor Front End"/>
+<meta itemprop="name" content="Mario Souto - Desenvolvedor Front End"/>
+
+<meta property="og:url" content="https://mariosouto.comhttp://blog.alura.com.br/criando-componentes-css-com-padrao-bem/">
+
+
+
+<meta itemprop="image" content="https://mariosouto.com/assets/img/banner-site.png"/>
+<meta property="og:image" content="https://mariosouto.com/assets/img/banner-site.png"/>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://mariosouto.com/assets/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://mariosouto.com/assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://mariosouto.com/assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://mariosouto.com/assets/favicons/manifest.json">
+<link rel="mask-icon" href="https://mariosouto.com/assets/favicons/safari-pinned-tab.svg" color="#ff6a00">
+<meta name="msapplication-TileColor" content="#ff6a00">
+<meta name="msapplication-TileImage" content="https://mariosouto.com/assets/favicons/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link href="/favicon.ico" rel="icon">
+<link rel="alternate" href="/atom.xml" title="Mario Souto" type="application/atom+xml">
+<!-- ./Aditional Settings -->
+
+
+<link rel="stylesheet" href="/stylus/app.css">
+
+<!-- Google Analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-69548205-5', 'auto');
+    ga('send', 'pageview');
+</script>
+</head>
+<body>
+    <div class="hide">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="video-retangle" preserveAspectRatio="xMidYMid meet" viewBox="0 0 52 58"> <path d="M41 0h11v47H41V0zM0 47h52v11H0V47z"></path> </symbol><symbol id="icon-close" preserveAspectRatio="xMidYMid meet" viewBox="0 0 18 18"> <path d="M2.3.4L17.6 16c.4.4.4 1.1 0 1.6-.4.4-1.1.4-1.5 0L.8 1.9C.4 1.5.4.8.8.3c.4-.4 1.1-.4 1.5.1 0-.1 0-.1 0 0zM17.2.3l.1.1c.4.4.4 1.1 0 1.6L1.9 17.6c-.4.4-1.1.4-1.5 0l-.1-.1c-.4-.4-.4-1.1 0-1.6L15.6.3c.5-.4 1.1-.4 1.6 0z"></path> </symbol><symbol id="logo-pulso" preserveAspectRatio="xMidYMid meet" viewBox="0 0 407 197"> <path d="M352.5 31.7c10.9.1 20.4 2.5 28.5 7.2 8.1 4.7 14.7 11.5 19 19.8 4.5 8.5 6.9 18.1 7 29.4-.1 10.9-2.3 20.6-6.9 29.1-4.3 8.3-10.9 15.1-19 19.8-8.1 4.9-17.8 7.2-28.6 7.4v-26.8c4.8 0 9.4-1.6 13.2-4.5 3.6-3 6.5-6.8 8.4-11 1.9-4.4 2.9-9.2 3-14 0-4.9-1-9.8-3-14.2-1.8-4.4-4.7-8.2-8.4-11.1-3.8-2.9-8.4-4.4-13.2-4.5V31.7zm0 112.6c-10.9-.1-20.5-2.5-28.6-7.4-8.1-4.7-14.7-11.5-19-19.8-4.5-8.4-6.8-18.1-6.9-29.1.1-11.1 2.4-20.9 7-29.4 4.4-8.2 10.9-15.1 19-19.8 8.1-4.9 17.7-7.2 28.6-7.2v26.7c-4.8 0-9.4 1.6-13.2 4.5-3.7 3-6.6 6.8-8.5 11.1-3.9 9-3.9 19.2 0 28.2 1.9 4.3 4.8 8.1 8.5 11 3.8 2.9 8.4 4.5 13.2 4.5v26.6l-.1.1zm-70.2-86.5c-1.4-1.1-2.9-2-4.5-2.9-2.6-1.4-5.4-2.2-8.4-2.3-2.5 0-4.9.9-6.8 2.6-1.9 1.6-3 3.9-3 6.4 0 2.4 1.2 4.7 3.1 6.2 2.4 1.8 5.1 3.3 7.9 4.3 3.4 1.3 6.6 2.6 10.4 4.1 3.7 1.5 7.2 3.5 10.4 5.9 3.3 2.5 6 5.8 7.8 9.5 2.1 4 3 9 3.3 14.9.1 7.1-1.9 14.1-5.7 20.2-3.6 5.5-8.6 10-14.6 12.8-6.3 3.1-13.2 4.7-20.1 4.6-7 0-13.9-1.6-20.1-4.6-6.3-3-11.9-7.4-16.3-12.8l15.5-15.8c2.3 2.3 4.9 4.4 7.7 6.1 3.6 2.4 7.8 3.7 12.1 3.8 3.1.1 6-1 8.3-3.1 2.3-2.2 3.5-5.2 3.5-8.3.1-2.7-1-5.4-3-7.2-2.2-2-4.8-3.6-7.7-4.6-3-1.3-6.5-2.7-10-4-3.5-1.4-6.9-3.3-10-5.5-3.2-2.3-5.8-5.2-7.7-8.7-2.1-3.6-3-8.2-3-13.8-.1-6.1 1.3-12.2 4.2-17.6 2.7-5 6.7-9.2 11.5-12.1 5.2-3 11.2-4.5 17.2-4.5 3.9.1 7.8.5 11.6 1.2 4.1.7 8 1.9 11.8 3.6 3.5 1.5 6.7 3.5 9.5 5.9l-14.9 15.7zM125.4 35.2v57.2c-.1 4.1.3 8.3 1 12.3.6 3.7 2.2 7.2 4.8 10.1 2.4 2.7 6.2 4 11.2 4.1 4.9-.1 8.6-1.4 11.1-4.1 2.5-2.9 4.1-6.3 4.8-10.1.8-4.1 1.1-8.2 1-12.3V65.6l29.6-30.1v61.9c0 15.4-4 27.2-11.6 35-7.8 8.1-19.4 12-34.8 12-15.5 0-27.1-4-34.8-12-7.8-7.8-11.8-19.6-11.8-35v-32l29.5-30.2zm-77 0c7.9.4 15.7 2 23.1 4.7 8 3.1 14.7 8.8 19.2 16.1 4.5 7.2 6.8 17.2 6.9 29.4-.1 17.3-4.5 30-13.3 38.7-8.4 8.2-20.4 12.3-35.9 12.6v-27c1.5-.2 3.1-.6 4.5-1.1 4-1.1 7.4-3.8 9.4-7.5 2.2-3.7 3.4-9 3.4-15.9 0-7-1.3-12.1-3.7-15.5-2.5-3.5-6.1-5.9-10.2-6.9-1-.2-2.2-.5-3.4-.7V35.2zM0 197V35.1h42.3c2.1-.1 4.1 0 6.2.1v27c-3.9-.7-7.8-1-11.8-.8h-5.6v49h6.4c3.7.1 7.3-.1 10.9-.7v27c-.6.1-1.2.1-1.9.1H31.1v-.1 28.6M223.5 0v129.4l-11.1 11.5H194V30.1L223.5 0z"></path> </symbol><symbol id="polygon-shape" preserveAspectRatio="xMidYMid meet" viewBox="0 0 94 108"> <path d="M46.993 108a6.08 6.08 0 0 1-3-.8L3 83.23a6.092 6.092 0 0 1-3-5.27V30.04a6.153 6.153 0 0 1 3-5.27L43.992.82a5.9 5.9 0 0 1 6 0L91 24.77a6.153 6.153 0 0 1 3 5.27v47.92a6.092 6.092 0 0 1-3 5.27L49.992 107.2a6.03 6.03 0 0 1-3 .8z"></path> </symbol> <symbol id="polygon-draw-home-old" preserveAspectRatio="xMidYMid meet" viewBox="0 0 924 481"> <path fill="transparent" stroke-width="3" class="polygon-draw" d="M2.6 239.5h92.2c.8 0 1.6.2 2.3.6L121 254c1.2.7 2.7.7 3.9 0l23.9-13.8c.7-.4 1.5-.6 2.3-.6h327.5c12.6 0 20.4-5.4 20.4-15.5v-88.8c0-9.6 5.1-18.4 13.3-23.1L694.4 7c4.1-2.3 8.7-3.5 13.3-3.5 4.6 0 9.2 1.2 13.3 3.5l182 105.1c8.2 4.7 13.3 13.5 13.3 23.1v210.1c0 9.5-5.1 18.3-13.3 23.1l-182 105c-4.2 2.4-8.7 3.6-13.3 3.6-4.6 0-9.2-1.2-13.3-3.6l-182-105c-8.2-4.8-13.3-13.6-13.3-23.1V274"></path> </symbol><symbol id="polygon-draw-home" preserveAspectRatio="xMidYMid meet" viewBox="0 0 924 481"> <path fill="transparent" stroke-width="3" d="M2.6 239.5h92.2c.8 0 55.5.1 56.3.1h327.5c12.6 0 20.4-5.4 20.4-15.5v-88.8c0-9.6 5.1-18.4 13.3-23.1L694.4 7c4.1-2.3 8.7-3.5 13.3-3.5S716.9 4.7 721 7l182 105.1c8.2 4.7 13.3 13.5 13.3 23.1v210.1c0 9.5-5.1 18.3-13.3 23.1l-182 105c-4.2 2.4-8.7 3.6-13.3 3.6s-9.2-1.2-13.3-3.6l-182-105c-8.2-4.8-13.3-13.6-13.3-23.1V274"></path> </symbol> <symbol id="search-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 17.031 17.032"> <path class="cls-1" d="M49.708,829.365h-0.77l-0.273-.263a6.351,6.351,0,1,0-.682.682l0.263,0.273v0.77l4.874,4.865,1.453-1.453Zm-5.849,0a4.387,4.387,0,1,1,4.387-4.387A4.381,4.381,0,0,1,43.859,829.365Z" transform="translate(-37.531 -818.656)"></path> </symbol> <symbol id="arrow-strong-down" preserveAspectRatio="xMidYMid meet" viewBox="0 0 23.3 14.4"> <path class="st0" d="M.048 3.115L2.876.287l11.312 11.315-2.828 2.828z"></path><path class="st0" d="M8.767 11.36L20.077.043l2.83 2.828-11.31 11.318z"></path> </symbol> <symbol id="arrow-left" preserveAspectRatio="xMidYMid meet" viewBox="0 0 4.969 8.5"> <path data-name="Rectangle 9 copy 6" class="cls-1" d="M.72.007L4.96 4.25l-.707.707L.012.714zm3.535 3.535l.707.708L.72 8.492.01 7.785z"></path> </symbol> <symbol id="share-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 12 13"> <path class="st0" d="M10 9.2c-.5 0-1 .2-1.3.5L3.9 7c.1-.2.1-.3.1-.5s0-.3-.1-.5l4.7-2.7c.4.4.9.6 1.4.6 1.1 0 2-.9 2-2s-.9-2-2-2C8.9 0 8 .9 8 2c0 .2 0 .3.1.5L3.4 5.1c-.4-.3-.9-.5-1.4-.5-1.1 0-2 .9-2 2s.9 2 2 2c.5 0 1-.2 1.4-.5l4.7 2.7c0 .1-.1.3-.1.4 0 1.1.9 1.9 1.9 1.9 1.1 0 1.9-.9 1.9-1.9s-.7-2-1.8-2z"></path> </symbol> <symbol id="pinterest-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 15.7 16"> <path class="st0" d="M7.9 0C3.5 0 0 3.6 0 8s3.5 8 7.9 8c4.3 0 7.9-3.6 7.9-8-.1-4.4-3.6-8-7.9-8zm-.1 15.1c-.7 0-1.4-.1-2.1-.3.3-.5.7-1.2.9-1.9.1-.3.4-1.7.4-1.7.2.4.9.8 1.6.8 2.1 0 3.6-2 3.6-4.4 0-2.3-1.9-4.1-4.3-4.1-3 0-4.6 2.1-4.6 4.3 0 1 .5 2.3 1.4 2.8.1.1.2 0 .2-.1s.1-.6.2-.8v-.2c-.3-.4-.5-1-.5-1.6 0-1.6 1.2-3.1 3.2-3.1 1.7 0 2.9 1.2 2.9 2.9 0 1.9-1 3.3-2.2 3.3-.7 0-1.2-.6-1-1.3.2-.8.6-1.8.6-2.4 0-.5-.3-1-.9-1-.7 0-1.3.7-1.3 1.7 0 .6.2 1 .2 1s-.7 3-.8 3.5c-.1.6-.1 1.5 0 2C2.7 13.6.9 11 .9 8 .9 4.1 4 .9 7.9.9s7 3.2 7 7.1c-.1 3.9-3.2 7.1-7.1 7.1z"></path> </symbol> <symbol id="instagram-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"> <path d="M256 49.5c67.3 0 75.2.3 101.8 1.5 24.6 1.1 37.9 5.2 46.8 8.7 11.8 4.6 20.2 10 29 18.8s14.3 17.2 18.8 29c3.4 8.9 7.6 22.2 8.7 46.8 1.2 26.6 1.5 34.5 1.5 101.8s-.3 75.2-1.5 101.8c-1.1 24.6-5.2 37.9-8.7 46.8-4.6 11.8-10 20.2-18.8 29s-17.2 14.3-29 18.8c-8.9 3.4-22.2 7.6-46.8 8.7-26.6 1.2-34.5 1.5-101.8 1.5s-75.2-.3-101.8-1.5c-24.6-1.1-37.9-5.2-46.8-8.7-11.8-4.6-20.2-10-29-18.8s-14.3-17.2-18.8-29c-3.4-8.9-7.6-22.2-8.7-46.8-1.2-26.6-1.5-34.5-1.5-101.8s.3-75.2 1.5-101.8c1.1-24.6 5.2-37.9 8.7-46.8 4.6-11.8 10-20.2 18.8-29s17.2-14.3 29-18.8c8.9-3.4 22.2-7.6 46.8-8.7 26.6-1.3 34.5-1.5 101.8-1.5m0-45.4c-68.4 0-77 .3-103.9 1.5C125.3 6.8 107 11.1 91 17.3c-16.6 6.4-30.6 15.1-44.6 29.1-14 14-22.6 28.1-29.1 44.6-6.2 16-10.5 34.3-11.7 61.2C4.4 179 4.1 187.6 4.1 256s.3 77 1.5 103.9c1.2 26.8 5.5 45.1 11.7 61.2 6.4 16.6 15.1 30.6 29.1 44.6 14 14 28.1 22.6 44.6 29.1 16 6.2 34.3 10.5 61.2 11.7 26.9 1.2 35.4 1.5 103.9 1.5s77-.3 103.9-1.5c26.8-1.2 45.1-5.5 61.2-11.7 16.6-6.4 30.6-15.1 44.6-29.1 14-14 22.6-28.1 29.1-44.6 6.2-16 10.5-34.3 11.7-61.2 1.2-26.9 1.5-35.4 1.5-103.9s-.3-77-1.5-103.9c-1.2-26.8-5.5-45.1-11.7-61.2-6.4-16.6-15.1-30.6-29.1-44.6-14-14-28.1-22.6-44.6-29.1-16-6.2-34.3-10.5-61.2-11.7-27-1.1-35.6-1.4-104-1.4z"></path><path d="M256 126.6c-71.4 0-129.4 57.9-129.4 129.4s58 129.4 129.4 129.4 129.4-58 129.4-129.4-58-129.4-129.4-129.4zm0 213.4c-46.4 0-84-37.6-84-84s37.6-84 84-84 84 37.6 84 84-37.6 84-84 84z"></path><circle cx="390.5" cy="121.5" r="30.2"></circle> </symbol> <symbol id="youtube-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 96.875 96.875"> <path d="M95.2 25.538c-1.185-5.152-5.4-8.953-10.472-9.52-12.013-1.34-24.172-1.348-36.275-1.34-12.105-.008-24.266 0-36.28 1.34-5.07.567-9.28 4.368-10.466 9.52C.02 32.875 0 40.884 0 48.438 0 55.992 0 64 1.688 71.336c1.184 5.15 5.396 8.952 10.47 9.52 12.01 1.342 24.17 1.35 36.276 1.342 12.107.007 24.264 0 36.275-1.342 5.07-.567 9.284-4.368 10.47-9.52C96.87 64 96.875 55.99 96.875 48.438c0-7.554.014-15.563-1.674-22.9zM35.937 63.474V31.437l30.798 16.068c-10.3 5.342-20.504 10.63-30.798 15.97z"></path> </symbol> <symbol id="linkedin-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 430.117 430.117"> <path d="M430.117 261.543V420.56H337.93V272.193c0-37.27-13.335-62.707-46.704-62.707-25.473 0-40.632 17.142-47.3 33.724-2.433 5.928-3.06 14.18-3.06 22.477V420.56H148.65s1.242-251.285 0-277.32h92.21v39.31c-.187.293-.43.61-.606.895h.606v-.896c12.25-18.87 34.13-45.825 83.102-45.825 60.673 0 106.157 39.636 106.157 124.818zM52.183 9.558C20.635 9.558 0 30.25 0 57.463c0 26.62 20.038 47.94 50.96 47.94h.615c32.16 0 52.16-21.317 52.16-47.94-.607-27.212-20-47.905-51.552-47.905zM5.477 420.56H97.66V143.24H5.478v277.32z"></path> </symbol> <symbol id="gplus-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 13.7 13.8"> <path class="st0" d="M6.6.7c.1 0 .2.1.4.3.1.1.3.3.4.5.1.2.2.4.3.7.1.3.1.6.1.9 0 .6-.2 1.2-.4 1.6-.1.2-.3.3-.4.5-.2.1-.4.3-.6.5-.1.1-.2.2-.3.4-.1.1-.1.3-.1.5s0 .3.1.4l.3.3.6.6c.4.3.7.7 1 1 .3.4.4.9.4 1.5 0 .9-.4 1.7-1.2 2.3-.8.7-2 1.1-3.5 1.1-1.3 0-2.2-.3-2.8-.8-.6-.5-.9-1.1-.9-1.8 0-.3.1-.7.3-1.1.2-.4.6-.8 1.1-1.1.6-.3 1.2-.5 1.8-.7.6-.1 1.2-.1 1.6-.2-.1-.1-.2-.3-.3-.5-.1-.2-.2-.4-.2-.6 0-.2 0-.3.1-.4 0-.1.1-.2.1-.3h-.6c-1 0-1.7-.3-2.2-.9-.5-.6-.8-1.2-.8-2 0-.9.4-1.7 1.1-2.4C2.5.6 3.1.3 3.6.2 4.2.1 4.7 0 5.2 0h3.6L7.7.7H6.6zm.7 10.4c0-.5-.1-.9-.5-1.2-.3-.3-.8-.7-1.5-1.2H4.2c-.4.1-.7.2-1.1.3-.1 0-.3.1-.4.1-.2.1-.4.2-.5.4-.2.1-.3.3-.5.5-.1.2-.2.5-.2.8 0 .6.3 1.2.9 1.6.6.4 1.3.6 2.3.7.9 0 1.5-.2 2-.6.4-.4.6-.8.6-1.4zM4.7 5.8c.5 0 .9-.2 1.2-.5.2-.3.3-.5.3-.7V4c0-.7-.2-1.4-.5-2.2-.1-.4-.4-.7-.6-.9-.3-.2-.6-.3-1-.3-.5 0-.9.2-1.2.6-.3.4-.5.8-.5 1.3 0 .7.2 1.3.6 2 .2.3.4.6.7.8.3.4.7.5 1 .5zM13.7 2h-1.9V.1h-.9V2H9v.9h1.9v1.9h.9V2.9h1.9V2z"></path> </symbol> <symbol id="facebook-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"> <path d="M296.296 512H200.36V256h-64v-88.225l64-.03-.104-51.975C200.256 43.794 219.773 0 304.556 0h70.588v88.242H331.03c-33.017 0-34.605 12.328-34.605 35.342l-.13 44.162h79.345l-9.354 88.225-69.926.03-.064 256z"></path> </symbol> <symbol id="twitter-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 56.693 56.693"> <path d="M52.837 15.065c-1.81.805-3.76 1.348-5.805 1.59 2.088-1.25 3.69-3.23 4.444-5.59-1.953 1.158-4.115 2-6.418 2.453-1.843-1.964-4.47-3.192-7.377-3.192-5.58 0-10.105 4.525-10.105 10.107 0 .79.09 1.562.262 2.303-8.4-.422-15.848-4.445-20.833-10.56-.87 1.492-1.368 3.228-1.368 5.082 0 3.506 1.784 6.6 4.496 8.412-1.656-.053-3.215-.508-4.578-1.265v.128c0 4.896 3.483 8.98 8.107 9.91-.847.23-1.74.354-2.662.354-.652 0-1.285-.063-1.902-.182 1.287 4.015 5.02 6.938 9.44 7.02-3.458 2.71-7.815 4.326-12.55 4.326-.816 0-1.62-.047-2.412-.14 4.474 2.868 9.786 4.54 15.493 4.54 18.59 0 28.756-15.4 28.756-28.756 0-.438-.01-.875-.028-1.31 1.974-1.42 3.688-3.202 5.042-5.23z"></path> </symbol></svg>
+</div>
+    
+    <a href="https://github.com/omariosouto/omariosouto.github.io" class="githubCorner" aria-label="View source on Github">
+    <svg class="githubCorner" width="80" height="80" viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+<header class="globalHeader">
+    <a href="/">
+        <svg class="globalHeader__logo" xmlns="http://www.w3.org/2000/svg" viewBox="-146 106 207 290">
+            <path d="M-42.7 308.2c-54.5 0-98.8-44.3-98.8-98.8s44.3-98.8 98.8-98.8 98.8 44.3 98.8 98.8-44.3 98.8-98.8 98.8z" fill="#FFF"></path><path d="M-42.7 115.1c52 0 94.3 42.3 94.3 94.3s-42.3 94.3-94.3 94.3-94.3-42.3-94.3-94.3 42.3-94.3 94.3-94.3m0-9c-57 0-103.3 46.3-103.3 103.3s46.3 103.3 103.3 103.3S60.6 266.4 60.6 209.4 14.4 106.1-42.7 106.1z" fill="#FF6A00"></path>
+            <g class="globalHeader__logoName">
+                <path fill="#FF6A00" d="M-1.1 238.4h-21.4v-50.3l21.4-21.3"></path><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="-78.73" y1="295.62" x2="-75.312" y2="299.038" gradientTransform="matrix(1 0 0 -1 0 504)"><stop offset="0" stop-color="#FF6A00"></stop><stop offset="1" stop-color="#8E0000"></stop></linearGradient><path fill="url(#a)" d="M-62.9 238.4h-21.3V168l21.3 21.4"></path><path fill="#FF6A00" d="M-27.4 223.4l-15.1 15.1-41.7-41.7v-30"></path>
+            </g>
+            <g class="globalHeader__logoText">
+                <g fill="#FF6A00">
+                    <path d="M-84.2 344.3l-7.2 14.6H-95l-7.2-14.6v16.8h-6v-26.7h8.1l6.9 14.7 6.9-14.7h8v26.7h-6l.1-16.8zM-52.4 361.1l-2.5-5.8h-11.2l-2.5 5.8h-6.3l11.5-26.7h5.8l11.5 26.7h-6.3zm-8.1-18.8l-3.4 7.8h6.7l-3.3-7.8zM-21 343.3c0 4.3-1.7 7-5.1 8.3l6.8 9.6h-7.3l-5.9-8.5h-4.1v8.5h-6v-26.7h10.1c4.2 0 7.1.7 8.9 2.1 1.7 1.3 2.6 3.6 2.6 6.7zm-7.2 3.1c.7-.7 1.1-1.7 1.1-3.2 0-1.4-.4-2.4-1.1-3-.8-.5-2.1-.8-4-.8h-4.5v7.9h4.4c2 .1 3.4-.2 4.1-.9zM-14.6 334.4h6v26.7h-6v-26.7zM20.6 357.4c-2.7 2.6-6 4-10 4s-7.3-1.3-10-4-4-5.9-4-9.8c0-3.9 1.3-7.2 4-9.8s6-4 10-4 7.3 1.3 10 4c2.7 2.6 4 5.9 4 9.8 0 3.9-1.3 7.2-4 9.8zm-2-9.8c0-2.4-.8-4.4-2.3-6.1s-3.4-2.5-5.6-2.5c-2.2 0-4.1.8-5.6 2.5s-2.3 3.7-2.3 6.1.8 4.4 2.3 6.1 3.4 2.5 5.6 2.5c2.2 0 4.1-.8 5.6-2.5s2.3-3.7 2.3-6.1zM-102.3 374.2c-.6.5-.9 1.1-.9 1.9s.3 1.4 1.1 1.9c.7.5 2.3 1 4.9 1.6 2.5.6 4.5 1.6 5.9 2.8 1.4 1.2 2.1 3.1 2.1 5.5s-.9 4.3-2.7 5.8-4.2 2.2-7.1 2.2c-4.2 0-8-1.6-11.4-4.7l3.6-4.4c2.9 2.5 5.5 3.8 8 3.8 1.1 0 2-.2 2.6-.7s.9-1.1.9-1.9-.3-1.4-1-1.9-2-.9-3.9-1.4c-3.1-.7-5.4-1.7-6.8-2.9-1.4-1.2-2.2-3-2.2-5.6 0-2.5.9-4.5 2.7-5.9 1.8-1.4 4.1-2.1 6.8-2.1 1.8 0 3.6.3 5.3.9 1.8.6 3.3 1.5 4.7 2.6l-3 4.4c-2.3-1.8-4.7-2.6-7.2-2.6-1.1 0-1.8.2-2.4.7zM-61.7 391.9c-2.7 2.6-6 4-10 4s-7.3-1.3-10-4-4-5.9-4-9.8 1.3-7.2 4-9.8 6-4 10-4 7.3 1.3 10 4c2.7 2.6 4 5.9 4 9.8s-1.3 7.1-4 9.8zm-2-9.8c0-2.4-.8-4.4-2.3-6.1s-3.4-2.5-5.6-2.5-4.1.8-5.6 2.5-2.3 3.7-2.3 6.1.8 4.4 2.3 6.1 3.4 2.5 5.6 2.5 4.1-.8 5.6-2.5 2.3-3.8 2.3-6.1zM-45.6 388.7c1 1.2 2.3 1.9 4 1.9s3-.6 4-1.9c1-1.2 1.5-2.9 1.5-5.1v-14.7h6v14.9c0 3.9-1.1 6.8-3.2 8.9s-4.9 3.1-8.2 3.1c-3.3 0-6.1-1-8.2-3.1-2.2-2.1-3.2-5.1-3.2-8.9v-14.9h6v14.7c-.1 2.1.3 3.8 1.3 5.1zM-12.6 374v21.6h-6V374h-7.6v-5.2h21.1v5.2h-7.5zM21 391.9c-2.7 2.6-6 4-10 4s-7.3-1.3-10-4-4-5.9-4-9.8 1.3-7.2 4-9.8 6-4 10-4 7.3 1.3 10 4c2.7 2.6 4 5.9 4 9.8s-1.3 7.1-4 9.8zm-2-9.8c0-2.4-.8-4.4-2.3-6.1s-3.4-2.5-5.6-2.5c-2.2 0-4.1.8-5.6 2.5s-2.3 3.7-2.3 6.1.8 4.4 2.3 6.1 3.4 2.5 5.6 2.5c2.2 0 4.1-.8 5.6-2.5 1.6-1.7 2.3-3.8 2.3-6.1z"></path>
+                </g>
+            </g>
+        </svg>
+    </a>
+
+    <h1 class="globalHeader__title"><strong>@omariosouto</strong></h1>
+
+    <nav class="globalHeader__navMenu">
+        <ul class="globalHeader__menu">
+            
+            <li class="globalHeader__item">
+                <a class="globalHeader__link" href="/">
+                    <svg class="globalHeader__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125"><path d="M37.525 67.525a3.5 3.5 0 1 0 4.95 4.95l20-20a3.5 3.5 0 0 0 0-4.95l-20-20a3.5 3.5 0 1 0-4.95 4.95L55.06 50.01 37.525 67.525z" fill="#000" fill-rule="evenodd"/></svg> Home
+                </a>
+            </li>
+            
+            <li class="globalHeader__item">
+                <a class="globalHeader__link" href="/about">
+                    <svg class="globalHeader__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125"><path d="M37.525 67.525a3.5 3.5 0 1 0 4.95 4.95l20-20a3.5 3.5 0 0 0 0-4.95l-20-20a3.5 3.5 0 1 0-4.95 4.95L55.06 50.01 37.525 67.525z" fill="#000" fill-rule="evenodd"/></svg> Sobre
+                </a>
+            </li>
+            
+            <li class="globalHeader__item">
+                <a class="globalHeader__link" href="/feed.xml">
+                    <svg class="globalHeader__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125"><path d="M37.525 67.525a3.5 3.5 0 1 0 4.95 4.95l20-20a3.5 3.5 0 0 0 0-4.95l-20-20a3.5 3.5 0 1 0-4.95 4.95L55.06 50.01 37.525 67.525z" fill="#000" fill-rule="evenodd"/></svg> Feed
+                </a>
+            </li>
+            
+        </ul> 
+    </nav>
+
+    <p class="globalHeader__description">
+        Front end Developer, CSS Evangelist, JavaScript Enthusiast, Speaker, Writer and lover of new challenges.
+    </p>    
+
+    <ul class="socialLinks globalHeader__socialLinks">
+        <li class="socialLinks__item">
+            <a class="socialLinks__link" target="_blank" href="https://facebook.com/omariosouto">
+                <svg class="socialLinks__icon"><use xlink:href="#facebook-icon"></svg>
+            </a>
+        </li>
+        <li class="socialLinks__item">
+            <a class="socialLinks__link" target="_blank" href="https://twitter.com/omariosouto">
+                <svg class="socialLinks__icon"><use xlink:href="#twitter-icon"></svg>
+            </a>
+        </li>
+        <li class="socialLinks__item">
+            <a class="socialLinks__link" target="_blank" href="https://linkedin.com/in/omariosouto">
+                <svg class="socialLinks__icon"><use xlink:href="#linkedin-icon"></svg>
+            </a>
+        </li>
+    </ul>
+</header>
+    
+    <main class="siteMain">
+        <article class="contentArea highlightArea">
+    <header class="contentArea__header">
+        <h1 class="contentArea__headerTitle">Criando componentes CSS com o padrão BEM</h1>
+        <time datetime="2017-08-08T03:00:00.000Z">08/08/2017</time>
+    </header>
+    <div class="contentContainer">
+        <p>Muita gente me pergunta como escrever CSS de forma organizada. Nesse post fiz um passo a passo para usar uma das formas mais conhecidas. Segue o link para quem quiser ver o que rolou: <a href="http://blog.alura.com.br/criando-componentes-css-com-padrao-bem/" target="_blank" rel="noopener">http://blog.alura.com.br/criando-componentes-css-com-padrao-bem/</a></p>
+
+    </div> 
+</article>
+
+
+<!-- Share Area -->
+<section class="shareArea contentContainer">
+    <h3 class="shareArea__title">Gostou? Compartilhe \o</h3>
+    
+    <ul class="shareArea__list">
+        <li class="shareArea__listItem">
+            <a class="shareArea__listLink" href="  https://twitter.com/intent/tweet?text=&quot;Criando componentes CSS com o padrão BEM&quot;%20https://mariosouto.com/http://blog.alura.com.br/criando-componentes-css-com-padrao-bem/%20via%20@omariosouto&amp;hashtags=front end,css,bem" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Compartilhe no Twitter" target="_blank">
+                <svg class="shareArea__listIcon" xmlns="http://www.w3.org/2000/svg" >
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter-icon"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="shareArea__listItem">
+            <a class="shareArea__listLink" href="https://www.facebonok.com/sharer/sharer.php?u=https://mariosouto.com/http://blog.alura.com.br/criando-componentes-css-com-padrao-bem/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Compartilhe no Facebook" target="_blank">
+                <svg class="shareArea__listIcon" xmlns="http://www.w3.org/2000/svg" >
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook-icon"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="shareArea__listItem">
+            <a class="shareArea__listLink" href="https://www.linkedin.com/cws/share?url=https://mariosouto.comhttp://blog.alura.com.br/criando-componentes-css-com-padrao-bem/" onclick="window.open(this.href, 'linkedin-share', 'width=490,height=530');return false;" title="Compartilhe no Linkedin" target="_blank">
+                <svg class="shareArea__listIcon" xmlns="http://www.w3.org/2000/svg" >
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin-icon"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</section>
+
+<!-- Author Area -->
+<section class="authorArea">
+    <h3 class="authorArea__call authorArea__item">Autor</h3>    
+    <img class="authorArea__image authorArea__item circle" src="https://mariosouto.com/assets/img/mario-souto-blog-author.jpg" alt="Mario Souto - Desenvolvedor Front">
+    <h2 class="authorArea__title authorArea__item" >Mario Souto</h2>
+    <h3 class="authorArea__subTitle authorArea__item">Desenvolvedor Front End</h3>
+    <a class="authorArea__externalLink authorArea__item" href="https://github.com/omariosouto">github.com/omariosouto</a>
+</section>
+
+
+<!-- Comments Area -->
+<section class="commentsArea contentContainer" id="comments">
+    <h3 class="commentsArea__title" >Comentários</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>    
+<script type="text/javascript">
+var disqus_shortname = 'mariosouto';
+(function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+    </main>
+
+    <footer class="siteFooter">
+    <p class="siteFooter__info">
+        <span class="code">&lt;/&gt;</span> com Hexo e <span class="heart">❤</span><br>
+        © 2017 Mario Souto
+    </p>
+</footer>
+    <script src="/js/animOnScroll.js"></script>
+</body>
+</html>
