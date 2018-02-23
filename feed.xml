@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://mariosouto.com/"/>
-  <updated>2018-02-12T17:38:42.915Z</updated>
+  <updated>2018-02-23T14:33:10.000Z</updated>
   <id>https://mariosouto.com/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Como manipular o Head das páginas React utilizando o React Helmet</title>
+    <link href="https://mariosouto.com/como-manipular-o-head-das-paginas-react-utilizando-o-react-helmet/"/>
+    <id>https://mariosouto.com/como-manipular-o-head-das-paginas-react-utilizando-o-react-helmet/</id>
+    <published>2018-02-23T03:00:00.000Z</published>
+    <updated>2018-02-23T14:33:10.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Manipulando o Head das suas páginas com React de um jeito mais simples: <a href="https://medium.com/collabcode/roteamento-no-react-com-os-poderes-do-react-router-v4-fbc191b9937d" target="_blank" rel="noopener">https://medium.com/collabcode/roteamento-no-react-com-os-poderes-do-react-router-v4-fbc191b9937d</a></p>]]></content>
+    
+    <summary type="html">
+    
+      Manipulando o Head das suas páginas com React de um jeito mais simples.
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://mariosouto.com/categories/JavaScript/"/>
+    
+    
+      <category term="react" scheme="https://mariosouto.com/tags/react/"/>
+    
+      <category term="javascript" scheme="https://mariosouto.com/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Alura Live #72 – React e Comunidade</title>
+    <link href="https://mariosouto.com/alura-live-72-react-e-comunidade/"/>
+    <id>https://mariosouto.com/alura-live-72-react-e-comunidade/</id>
+    <published>2018-02-22T03:00:00.000Z</published>
+    <updated>2018-02-23T14:37:57.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Participação na Alura Live, comentando sobre comunidade, o que fazemos no CollabCode e bastante papo sobre React: <a href="https://www.youtube.com/watch?v=ncoCJ4bM2Hc&amp;t=12s" target="_blank" rel="noopener">https://www.youtube.com/watch?v=ncoCJ4bM2Hc&amp;t=12s</a></p>]]></content>
+    
+    <summary type="html">
+    
+      Participação na Alura Live, comentando sobre comunidade, o que fazemos no CollabCode e bastante papo sobre React.
+    
+    </summary>
+    
+      <category term="Tips" scheme="https://mariosouto.com/categories/Tips/"/>
+    
+    
+      <category term="live" scheme="https://mariosouto.com/tags/live/"/>
+    
+      <category term="react" scheme="https://mariosouto.com/tags/react/"/>
+    
+  </entry>
   
   <entry>
     <title>Roteamento no React com os poderes do React Router v4</title>

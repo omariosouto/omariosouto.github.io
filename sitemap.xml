@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mariosouto.com/alura-live-72-react-e-comunidade/</loc>
+    
+    <lastmod>2018-02-23T14:37:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mariosouto.com/como-manipular-o-head-das-paginas-react-utilizando-o-react-helmet/</loc>
+    
+    <lastmod>2018-02-23T14:33:10.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://mariosouto.com/about/index.html</loc>
     
     <lastmod>2018-02-12T17:42:00.117Z</lastmod>
@@ -16,7 +30,7 @@
   </url>
   
   <url>
-    <loc>https://mariosouto.com/criando-componentes-css-com-o-padrao-bem/</loc>
+    <loc>https://mariosouto.com/hipsters-72-por-tras-do-wordpress/</loc>
     
     <lastmod>2018-02-12T17:31:24.111Z</lastmod>
     
@@ -30,7 +44,7 @@
   </url>
   
   <url>
-    <loc>https://mariosouto.com/hipsters-72-por-tras-do-wordpress/</loc>
+    <loc>https://mariosouto.com/criando-componentes-css-com-o-padrao-bem/</loc>
     
     <lastmod>2018-02-12T17:31:24.111Z</lastmod>
     
