@@ -1,7 +1,6 @@
-version: 2
+version: 2.1
 jobs:
   build:
-    # environment:
     working_directory: ~/tmp
     docker:
       - image: circleci/node:8
@@ -10,3 +9,8 @@ jobs:
     steps:
       - checkout
       - run: echo 'Running'
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
