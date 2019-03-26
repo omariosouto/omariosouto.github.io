@@ -4,7 +4,7 @@ date: 2018-08-25
 url: https://www.youtube.com/watch?v=qFYHOkuy35A
 description: Palestra sobre Houdini CSS e alguns experimentos com as possibilidades que ele irá trazer.
 external: BrazilJS
-category: Tips
+category: JavaScript
 tags:
 - talk
 - css
