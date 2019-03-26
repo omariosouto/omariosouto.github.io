@@ -14,3 +14,7 @@ workflows:
   build_and_test:
     jobs:
       - build
+general:
+  branches:
+    only:
+     - develop
