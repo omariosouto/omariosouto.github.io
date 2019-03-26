@@ -1,0 +1,12 @@
+version: 2
+jobs:
+  build:
+    # environment:
+    working_directory: ~/tmp
+    docker:
+      - image: circleci/node:8
+        environment: 
+          repo_token: lMhmDbvzUYOq3UViwOsrorbULyFtr0byN 
+    steps:
+      - checkout
+      - run: echo 'Running'
