@@ -23,7 +23,7 @@ jobs:
       - run: cd .deploy && git status && git add -A .
       - run: cd .deploy && git commit -m 'Site updated'
       - run: cd .deploy && git branch -m master
-      - run: cd .deploy && git push -q -u origin master
+      - run: cd .deploy && git push -f -q -u origin master
 workflows:
   version: 2
   build_and_test:
