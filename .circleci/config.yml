@@ -7,7 +7,7 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "93:e9:6f:ab:ad:4f:93:e6:65:64:3b:c5:4e:56:25:ef"
+            - "b5:0e:c0:c3:e6:27:eb:e0:2a:a4:28:a0:e9:02:05:c1"
       - checkout
       # Setup git things
       - run: git config --global user.name 'Mario Souto'
