@@ -1,10 +1,5 @@
 version: 2
 jobs:
-  setupkeys:
-    steps:
-      - add_ssh_keys:
-          fingerprints:
-            - "93:e9:6f:ab:ad:4f:93:e6:65:64:3b:c5:4e:56:25:ef"
   build:
     working_directory: ~/tmp
     docker:
