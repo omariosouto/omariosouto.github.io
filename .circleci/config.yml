@@ -11,18 +11,16 @@ jobs:
       - run: git config --global user.email 'soutomarios@gmail.com'
       - run: npm install && ./node_modules/.bin/hexo generate
       # Deploy things
-      # - run: mkdir .deploy
-      # - run: cd .deploy && git clone --depth 1 --branch master --single-branch https://github.com/omariosouto/omariosouto.github.io.git
-      # - run: cd .deploy && rm -rf ./*
-      # - run: cd .deploy && echo 'Before copy' && ls -a
-      # - run: cd .deploy && cp -r ../public/* ./
-      # - run: cd .deploy && echo 'After copy' && (git init && git remote add -t master origin https://github.com/omariosouto/omariosouto.github.io.git)
-      # - run: cd .deploy && git status && git add -A .
-      # - run: cd .deploy && git commit -m 'Site updated'
-      # - run: cd .deploy && git branch -m master
-      # - run: cd .deploy && git push -q -u origin master
-
-
+      - run: mkdir .deploy
+      - run: cd .deploy && git clone --depth 1 --branch master --single-branch https://github.com/omariosouto/omariosouto.github.io.git
+      - run: cd .deploy && rm -rf ./*
+      - run: cd .deploy && echo 'Before copy' && ls -a
+      - run: cd .deploy && cp -r ../public/* ./
+      - run: cd .deploy && echo 'After copy' && (git init && git remote add -t master origin https://github.com/omariosouto/omariosouto.github.io.git)
+      - run: cd .deploy && git status && git add -A .
+      - run: cd .deploy && git commit -m 'Site updated'
+      - run: cd .deploy && git branch -m master
+      - run: cd .deploy && git push -q -u origin master
 workflows:
   version: 2
   build_and_test:
