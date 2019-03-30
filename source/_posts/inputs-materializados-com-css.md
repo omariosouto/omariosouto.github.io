@@ -20,7 +20,7 @@ Boa parte dessas animações na web são facilmente feitas com JS…
 
 Cof cof, continuando… Sim é relativamente fácil fazer essas animações com JS e justamente por buscar uma outra alternativa eu resolvi fazer esse post. Então o desafio foi lançado: **Como fazer um Material Input somente com CSS?**
 
-## Primeiramente ~~(fora temer)~~
+## Primeiramente
 
 Os ingredientes necessários para essa receita serão: HTML5 Data Form Validations, Alguns seletores e lógica de CSS <3, amor e pensar um pouco fora do padrão.
 
