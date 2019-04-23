@@ -11,4 +11,4 @@ tags:
 - performance
 ---
 
-Todo mundo quer mas poucos sites realmente conseguem: aparecer na primeira página do google. Quais são as melhores práticas? E o que fazer quando tudas as regras de SEO mudam o tempo todo? Assista e descubra!
+Todo mundo quer mas poucos sites realmente conseguem: aparecer na primeira página do google. Quais são as melhores práticas? E o que fazer quando tudas as regras de SEO mudam o tempo todo? Assista e descubra
