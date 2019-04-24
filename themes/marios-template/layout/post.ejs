@@ -5,6 +5,10 @@
     </header>
     <div class="contentContainer">
         <%- page.content %>
+        
+        <% if(page.external) { %>
+            Esse post está hospedado em <strong><%- page.external %></strong>, <a href="<%- page.url %>" target="_blank">confira o post completo nesse link <%- page.url %></a>
+        <% } %>
     </div> 
 </article>
 
