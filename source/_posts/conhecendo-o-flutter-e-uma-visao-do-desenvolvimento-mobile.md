@@ -4,6 +4,7 @@ date: 2019-04-26
 url: https://blog.caelum.com.br/conhecendo-o-flutter-e-uma-visao-do-desenvolvimento-mobile/
 description: Escolher uma tecnologia nova tem vários prós e contras, nesse post faço um comparativo do Flutter com outras formas de desenvolvimento híbrido do mercado
 category: Mobile
+external: Blog Alura
 tags:
 - flutter
 - react native
