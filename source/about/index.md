@@ -7,14 +7,11 @@ description: É possível validar dados com HTML e CSS?
 
 <img class="circle" src="https://mariosouto.com/assets/img/foto-mario-2019.png" alt="Mario Souto - Desenvolvedor Front" style="max-width: 250px;"><br>
 
-Me chamo Mário Souto, nasci na cidade de São Paulo e atuo como instrutor e desenvolvedor front-end. Meu primeiro trabalho foi como "tio de festa infantil", paralelo a isso comecei realmente no mundo da web criando sites para meus servidores de Tibia quando tinha 11 anos e hoje com 21 estou oficialmente a 4 anos na área de programação, onde 2 foram na [Agência Digital Pulso](http://www.agenciapulso.com.br/) participando de diversos projetos com foco principal como Front End e volta e meia fazendo um papel mais Full Stack. Sou apaixonado por dar aulas e curto muito fazer isso em meio aos projetos que participo no [Grupo Caelum](https://www.caelum.com.br/sobre) (desde sites, webapps até um compilador universal que temos lá). 
+Me chamo Mário Souto, nasci na cidade de São Paulo e atuo como instrutor e desenvolvedor front-end e Sou formado em Análise e Desenvolvimento de sistemas pela UNIP e técnico em Informática p/ Internet pela ETEC Parque Belém.
+
+Meu primeiro trabalho foi como "tio de festa infantil", paralelo a isso comecei realmente no mundo da web criando sites para meus servidores de Tibia quando tinha 11 anos e hoje com 21 estou oficialmente a 4 anos na área de programação, onde 2 foram na [Agência Digital Pulso](http://www.agenciapulso.com.br/) participando de diversos projetos com foco principal como Front End e volta e meia fazendo um papel mais Full Stack. Sou apaixonado por dar aulas e curto muito fazer isso em meio aos projetos que participo no [Grupo Caelum](https://www.caelum.com.br/sobre) (desde sites, webapps até um compilador universal que temos lá). 
 
 Já palestrei na Front End Week, diversas faculdades, e minha maior conquista compartilhando conhecimento foi em 2018 quando realizei o sonho de compartilhar meus experimentos com Houdini CSS na BrazilJS em Porto Alegre e ajudar o [time do chrome a resolver 2 bugs em cima da API da nova spec](https://twitter.com/DasSurma/status/1034893725317640192).
-
- 
- Sou formado em Análise e Desenvolvimento de sistemas pela UNIP e técnico em Informática p/ Internet pela ETEC Parque Belém.
-
-Minha paixão pela web começou quando ainda pequeno eu pude criar e manter alguns servidores de jogos online. Hoje, essa paixão cresce dia após dia junto com o incrível poder de criar desde um simples blog até uma aplicação complexa que a plataforma me proporciona.
 
 ## Habilidades
 
@@ -50,6 +47,8 @@ Minha paixão pela web começou quando ainda pequeno eu pude criar e manter algu
 com 
 JavaScript e magia 
 ](https://docs.google.com/presentation/d/1HSjxRmq1Q4v_53OueUAG_hCxzTBWDNtZ3CC4-aaDPFk/edit#slide=id.p)
+* 08/05/2019 ETEC Vila Formosa - [Boas práticas e organização em projetos Front End + Introdução ao mundo do Node](https://docs.google.com/presentation/d/1rLGaJhQSEii_T_z69GVpt20Q36yro0rYkx4Orz61WMM/edit#slide=id.p)
+* 16/05/2019 Faculdade Flamingo - [Boas práticas e organização em projetos Front End](https://docs.google.com/presentation/d/1rLGaJhQSEii_T_z69GVpt20Q36yro0rYkx4Orz61WMM/edit#slide=id.p)
 * 21/05/2019 Meetup Caelum São Paulo - [Contextualizando onde entra a Context API do React + Bate papo sobre ecossistema React](https://docs.google.com/presentation/d/1qNHQP6qLWV3MED_jRZnL48kSYsp36LUai7bASc1zIu8/edit#slide=id.g58395d0f0a_0_173)
 
 
