@@ -5,7 +5,7 @@ url: /about/
 description: É possível validar dados com HTML e CSS?
 ---
 
-<img class="circle" src="https://mariosouto.com/assets/img/mario-souto-blog-author.jpg" alt="Mario Souto - Desenvolvedor Front"><br>
+<img class="circle" src="https://mariosouto.com/assets/img/foto-mario-2019.png" alt="Mario Souto - Desenvolvedor Front"><br>
 
 Me chamo Mário Souto, nasci na cidade de São Paulo e atuo como instrutor e desenvolvedor front-end. Meu primeiro trabalho foi como "tio de festa infantil", paralelo a isso comecei realmente no mundo da web criando sites para meus servidores de Tibia quando tinha 11 anos e hoje com 21 estou oficialmente a 4 anos na área de programação, onde 2 foram na [Agência Digital Pulso](http://www.agenciapulso.com.br/) participando de diversos projetos com foco principal como Front End e volta e meia fazendo um papel mais Full Stack. Sou apaixonado por dar aulas e curto muito fazer isso em meio aos projetos que participo no [Grupo Caelum](https://www.caelum.com.br/sobre) (desde sites, webapps até um compilador universal que temos lá). 
 
