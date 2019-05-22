@@ -43,10 +43,7 @@ Já palestrei na Front End Week, diversas faculdades, e minha maior conquista co
 * 02/12/2017 Front in Floripa - [O acoplamento, a mensageria e o Redux](https://docs.google.com/presentation/d/1KEL1RqzsHcZ6MuJ-cGf1fOs_7GxSvEWTe32s_ehHVrQ/edit?usp=sharing)
 * 19/12/2017 Developers HUB iMasters - Pensando em Componentes
 * 12/07/2018 React SP (Front End Week) - [O acoplamento, a mensageria e o Redux](https://docs.google.com/presentation/d/1KEL1RqzsHcZ6MuJ-cGf1fOs_7GxSvEWTe32s_ehHVrQ/edit?usp=sharing)
-* 12/07/2018 BrazilJS - [Estendendo o CSS
-com 
-JavaScript e magia 
-](https://docs.google.com/presentation/d/1HSjxRmq1Q4v_53OueUAG_hCxzTBWDNtZ3CC4-aaDPFk/edit#slide=id.p)
+* 12/07/2018 BrazilJS - [Estendendo o CSS com  JavaScript e magia](https://docs.google.com/presentation/d/1HSjxRmq1Q4v_53OueUAG_hCxzTBWDNtZ3CC4-aaDPFk/edit#slide=id.p)
 * 08/05/2019 ETEC Vila Formosa - [Boas práticas e organização em projetos Front End + Introdução ao mundo do Node](https://docs.google.com/presentation/d/1rLGaJhQSEii_T_z69GVpt20Q36yro0rYkx4Orz61WMM/edit#slide=id.p)
 * 16/05/2019 Faculdade Flamingo - [Boas práticas e organização em projetos Front End](https://docs.google.com/presentation/d/1rLGaJhQSEii_T_z69GVpt20Q36yro0rYkx4Orz61WMM/edit#slide=id.p)
 * 21/05/2019 Meetup Caelum São Paulo - [Contextualizando onde entra a Context API do React + Bate papo sobre ecossistema React](https://docs.google.com/presentation/d/1qNHQP6qLWV3MED_jRZnL48kSYsp36LUai7bASc1zIu8/edit#slide=id.g58395d0f0a_0_173)
