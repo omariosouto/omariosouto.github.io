@@ -13,7 +13,7 @@ Meu primeiro trabalho foi como "tio de festa infantil", paralelo a isso comecei 
 
 Já palestrei na Front End Week, diversas faculdades, e minha maior conquista compartilhando conhecimento foi em 2018 quando realizei o sonho de compartilhar meus experimentos com Houdini CSS na BrazilJS em Porto Alegre e ajudar o [time do chrome a resolver 2 bugs em cima da API da nova spec](https://twitter.com/DasSurma/status/1034893725317640192).
 
-Meu intuito com esse site é compartilhar meus conhecimentos e contribuir com a comunidade nas ferramentas que ando trabalhando/estudando (como é o caso da série [Dicas de React](https://mariosouto.com/tags/dicas-de-react/) e meus [posts sobre Flutter](https://mariosouto.com/tags/flutter/) além de outras tecnologias que vão surgindo), sempre que posso divulgo para o máximo de grupos que eu puder e fico bem feliz de ter posts meus comentados em vídeos na [BrazilJS Weekly](https://www.youtube.com/watch?v=X9gXx3ZyI70&t=2s).
+Meu intuito com esse site é compartilhar meus conhecimentos e contribuir com a comunidade nas ferramentas que ando trabalhando/estudando (como é o caso da série [Dicas de React](https://mariosouto.com/tags/dicas-de-react/) e meus [posts sobre Flutter](https://mariosouto.com/tags/flutter/) além de outras tecnologias que vão surgindo), sempre que posso divulgo para o máximo de grupos que eu puder e fico bem feliz de ter alguns dos meus posts comentados em vídeos na [BrazilJS Weekly](https://www.youtube.com/watch?v=X9gXx3ZyI70&t=2s).
 
 
 
@@ -39,10 +39,7 @@ Meu intuito com esse site é compartilhar meus conhecimentos e contribuir com a 
 
 ## Talks
 
-### São Paulo
-
-* 07/03/2017 Meetup CSS (Front End Week) - [Icônico SVG](https://mariosouto.com/slides-meetup-css-
--week)
+* 07/03/2017 Meetup CSS (Front End Week) - [Icônico SVG](https://mariosouto.com/slides-meetup-css-front-end-week/#/)
 * 01/04/2017 NetCoders (Novatec) - [Dando vida para Aplicações com Animações](https://mariosouto.com/dando-vida-aplicacoes-com-animacoes/)
 * 14/09/2017 São Judas - Que diabos são SPAs?
 * 02/12/2017 Front in Floripa - [O acoplamento, a mensageria e o Redux](https://docs.google.com/presentation/d/1KEL1RqzsHcZ6MuJ-cGf1fOs_7GxSvEWTe32s_ehHVrQ/edit?usp=sharing)
