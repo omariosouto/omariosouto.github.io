@@ -2,7 +2,7 @@
 title: Sobre
 date: 2017-01-24 00:52:45
 url: /about/
-description: É possível validar dados com HTML e CSS?
+description: Um pouco sobre minha vida
 ---
 
 <img class="circle" src="https://mariosouto.com/assets/img/foto-mario-2019.png" alt="Mario Souto - Desenvolvedor Front" style="max-width: 250px;"><br>
