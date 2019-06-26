@@ -7,9 +7,9 @@ description: Um pouco sobre minha vida
 
 <img class="circle" src="https://mariosouto.com/assets/img/foto-mario-2019.png" alt="Mario Souto - Desenvolvedor Front" style="max-width: 250px;"><br>
 
-Me chamo Mário Souto, nasci na cidade de São Paulo e atuo como instrutor e desenvolvedor Front End e sou formado em Análise e Desenvolvimento de sistemas pela UNIP e técnico em Informática p/ Internet pela ETEC Parque Belém.
+Me chamo Mário Souto, nasci na cidade de São Paulo e atuo como instrutor e desenvolvedor Front End. Sou formado em Análise e Desenvolvimento de Sistemas pela UNIP e técnico em Informática para Internet pela ETEC Parque Belém.
 
-Meu primeiro trabalho foi como "tio de festa infantil", paralelo a isso comecei realmente no mundo da web criando sites para meus servidores de Tibia quando tinha 11 anos e hoje com 21 estou oficialmente a 4 anos na área de programação, onde 2 foram na [Agência Digital Pulso](http://www.agenciapulso.com.br/) participando de diversos projetos com foco principal como Front End e volta e meia fazendo um papel mais Full Stack. Sou apaixonado por dar aulas e curto muito fazer isso em meio aos projetos que participo no [Grupo Caelum](https://www.caelum.com.br/sobre) desde criar/manter os sites, webapps, criação de cursos ([React](https://www.caelum.com.br/curso-react-redux), [JavaScript Moderno para WebApps](https://www.caelum.com.br/curso-javascript-jquery) e o de [Angular](https://www.caelum.com.br/curso-angular)) até um compilador universal que temos lá). 
+Meu primeiro trabalho foi como “tio de festa infantil”, paralelo a isso comecei realmente no mundo da web criando sites para meus servidores de Tibia quando tinha 11 anos. Hoje com 21 estou oficialmente a 4 anos na área de programação, onde 2 foram na [Agência Digital Pulso](http://www.agenciapulso.com.br/) participando de diversos projetos com foco principal como Front End e volta e meia fazendo um papel mais Full Stack. Sou apaixonado por dar aulas e curto muito fazer isso em meio aos projetos que participo no [Grupo Caelum](https://www.caelum.com.br/sobre) desde criar/manter os sites, webapps, criação de cursos (([React](https://www.caelum.com.br/curso-react-redux), [JavaScript Moderno para WebApps](https://www.caelum.com.br/curso-javascript-jquery) e o de [Angular](https://www.caelum.com.br/curso-angular)) até um compilador/executor de código universal que temos lá.
 
 Já palestrei na Front End Week, diversas faculdades, e minha maior conquista compartilhando conhecimento foi em 2018 quando realizei o sonho de compartilhar meus experimentos com Houdini CSS na BrazilJS em Porto Alegre e ajudar o [time do chrome a resolver 2 bugs em cima da API da nova spec](https://twitter.com/DasSurma/status/1034893725317640192).
 
@@ -17,7 +17,7 @@ Meu intuito com esse site é compartilhar meus conhecimentos e contribuir com a 
 
 
 
-## Habilidades
+## Tecnologias/Ferramentas/Fluxos que já trabalhei e/ou conheço
 
 * HTML (Template Engines)
 * CSS (RSCSS, ITCSS, BEM)
@@ -49,6 +49,9 @@ Meu intuito com esse site é compartilhar meus conhecimentos e contribuir com a 
 * 08/05/2019 ETEC Vila Formosa - [Boas práticas e organização em projetos Front End + Introdução ao mundo do Node](https://docs.google.com/presentation/d/1rLGaJhQSEii_T_z69GVpt20Q36yro0rYkx4Orz61WMM/edit#slide=id.p)
 * 16/05/2019 Faculdade Flamingo - [Boas práticas e organização em projetos Front End](https://docs.google.com/presentation/d/1rLGaJhQSEii_T_z69GVpt20Q36yro0rYkx4Orz61WMM/edit#slide=id.p)
 * 21/05/2019 Meetup Caelum São Paulo - [Contextualizando onde entra a Context API do React + Bate papo sobre ecossistema React](https://docs.google.com/presentation/d/1qNHQP6qLWV3MED_jRZnL48kSYsp36LUai7bASc1zIu8/edit#slide=id.g58395d0f0a_0_173)
+* 18/06/2019 Meetup NodeBR - [Como criar um executor de código universal com o melhor do node e criatividade](https://docs.google.com/presentation/d/1Hi_Kq2g2k13F3oUdiIsHWD2hv2kMIuS-LwLTyg4PV6M/edit?usp=sharing)
+* 19/06/2019 Empresa - Grupo Edson Queiroz - [O Mundo das empresas e Carreiras em tecnologia](https://docs.google.com/presentation/d/1IH34mMfKx0OlKm-r6qZKY2kQ01YXIzKIB7OtaGyH8m4/edit?usp=sharing)
+
 
 
 ## Contato
