@@ -1,5 +1,5 @@
 ---
-title: Eu agora to no YouTube #DevSoutinho   
+title: Finalmente, estou no YouTube e sou o Dev Soutinho :)
 date: 2019-05-17
 url: https://www.youtube.com/channel/UCzR2u5RWXWjUh7CwLSvbitA
 description: Depois de tantos pedidos, finalmente abri meu canal no YouTube, clica aqui e confere os vídeos que já foram lançados :) 
