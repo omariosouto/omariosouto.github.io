@@ -1,7 +1,7 @@
 ---
 title: Youtube Dev Soutinho
 date: 2017-01-24 00:52:45
-url: /about/
+url: /youtube-devsoutinho/
 description: Conheça meu canal no YouTube DevSoutinho
 ---
 
