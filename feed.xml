@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Mario Souto</title>
+  
+  <subtitle>Desenvolvedor Front End</subtitle>
+  <link href="/feed.xml" rel="self"/>
+  
+  <link href="https://mariosouto.com/"/>
+  <updated>2020-05-11T12:07:26.218Z</updated>
+  <id>https://mariosouto.com/</id>
+  
+  <author>
+    <name>Mario Souto</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Finalmente, estou no YouTube e sou o Dev Soutinho :)</title>
+    <link href="https://mariosouto.com/eu-sou-o-dev-soutinho/"/>
+    <id>https://mariosouto.com/eu-sou-o-dev-soutinho/</id>
+    <published>2019-05-17T03:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>Depois de tantos pedidos, finalmente abri meu canal no YouTube, clica aqui e confere os vídeos que já foram lançados :) </p>]]></content>
+    
+    <summary type="html">
+    
+      Depois de tantos pedidos, finalmente abri meu canal no YouTube, clica aqui e confere os vídeos que já foram lançados :)
+    
+    </summary>
+    
+      <category term="DevSoutinho" scheme="https://mariosouto.com/categories/DevSoutinho/"/>
+    
+    
+      <category term="javascript" scheme="https://mariosouto.com/tags/javascript/"/>
+    
+      <category term="devsoutinho" scheme="https://mariosouto.com/tags/devsoutinho/"/>
+    
+      <category term="youtube" scheme="https://mariosouto.com/tags/youtube/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Como integrar/rodar o Flutter no VsCode</title>
+    <link href="https://mariosouto.com/como-integrar-rodar-o-flutter-no-vscode/"/>
+    <id>https://mariosouto.com/como-integrar-rodar-o-flutter-no-vscode/</id>
+    <published>2019-05-17T03:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>Começou a mexer com Flutter e está perdido sobre como usar ele dentro do VSCode? Nesse post eu comento como fazer a integração e ainda dou dicas de como trabalhar com os emuladores do Android e do iOS dentro da ferramenta.</p>]]></content>
+    
+    <summary type="html">
+    
+      Começou a mexer com Flutter e está perdido sobre como usar ele dentro do VSCode? Nesse post eu comento como fazer a integração e ainda dou dicas de como trabalhar com os emuladores do Android e do iOS dentro da ferramenta.
+    
+    </summary>
+    
+      <category term="Mobile" scheme="https://mariosouto.com/categories/Mobile/"/>
+    
+    
+      <category term="flutter" scheme="https://mariosouto.com/tags/flutter/"/>
+    
+      <category term="flutter-no-vscode" scheme="https://mariosouto.com/tags/flutter-no-vscode/"/>
+    
+      <category term="debug" scheme="https://mariosouto.com/tags/debug/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>003 Como automatizar um code styleguide em projetos – Dicas de React</title>
+    <link href="https://mariosouto.com/003-como-automatizar-um-styleguide-em-projetos%E2%80%93dicas-de-react/"/>
+    <id>https://mariosouto.com/003-como-automatizar-um-styleguide-em-projetos–dicas-de-react/</id>
+    <published>2019-05-11T03:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>Terceiro post da série dicas de react. A ideia aqui é entender como automatizar a padronização do código do seu projeto com um styleguide usando ESlint, EditorConfig, Prettier no VSCode.</p>]]></content>
+    
+    <summary type="html">
+    
+      Terceiro post da série dicas de react. A ideia aqui é entender como automatizar a padronização do código do seu projeto com um styleguide usando ESlint, EditorConfig, Prettier no VSCode.
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://mariosouto.com/categories/JavaScript/"/>
+    
+    
+      <category term="react" scheme="https://mariosouto.com/tags/react/"/>
+    
+      <category term="dicas-de-react" scheme="https://mariosouto.com/tags/dicas-de-react/"/>
+    
+      <category term="styleguide" scheme="https://mariosouto.com/tags/styleguide/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>O que é Wordpress?</title>
+    <link href="https://mariosouto.com/o-que-e-wordpress/"/>
+    <id>https://mariosouto.com/o-que-e-wordpress/</id>
+    <published>2019-05-08T03:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>É possível fazer o site inteiro com Wordpress ou é ferramenta para blogzinho simples? Vai ficar bonito ou feio? Conheça as opções do maior CMS do mundo</p>]]></content>
+    
+    <summary type="html">
+    
+      É possível fazer o site inteiro com Wordpress ou é ferramenta para blogzinho simples? Vai ficar bonito ou feio? Conheça as opções do maior CMS do mundo
+    
+    </summary>
+    
+      <category term="Tips" scheme="https://mariosouto.com/categories/Tips/"/>
+    
+    
+      <category term="wordpress" scheme="https://mariosouto.com/tags/wordpress/"/>
+    
+      <category term="cms" scheme="https://mariosouto.com/tags/cms/"/>
+    
+      <category term="php" scheme="https://mariosouto.com/tags/php/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Como criar um projeto com Flutter - Hello World</title>
+    <link href="https://mariosouto.com/como-criar-um-projeto-com-flutter-hello-world/"/>
+    <id>https://mariosouto.com/como-criar-um-projeto-com-flutter-hello-world/</id>
+    <published>2019-05-04T03:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>Ta sempre ouvindo uma galera falando do tal do Flutter e sempre bate a preguiça de sentar e ver o que é esse negócio? Nesse post eu a gente faz junto o famoso “Hello World” cobrindo alguns probleminhas que podem acontecer e explicando o processo todo pra começar um projeto.</p>]]></content>
+    
+    <summary type="html">
+    
+      Ta sempre ouvindo uma galera falando do tal do Flutter e sempre bate a preguiça de sentar e ver o que é esse negócio? Nesse post eu a gente faz junto o famoso &quot;Hello World&quot; cobrindo alguns probleminhas que podem acontecer e explicando o processo todo pra começar um projeto.
+    
+    </summary>
+    
+      <category term="Mobile" scheme="https://mariosouto.com/categories/Mobile/"/>
+    
+    
+      <category term="flutter" scheme="https://mariosouto.com/tags/flutter/"/>
+    
+      <category term="get started" scheme="https://mariosouto.com/tags/get-started/"/>
+    
+      <category term="mobile" scheme="https://mariosouto.com/tags/mobile/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Conhecendo o Flutter, e uma visão do desenvolvimento mobile</title>
+    <link href="https://mariosouto.com/conhecendo-o-flutter-e-uma-visao-do-desenvolvimento-mobile/"/>
+    <id>https://mariosouto.com/conhecendo-o-flutter-e-uma-visao-do-desenvolvimento-mobile/</id>
+    <published>2019-04-26T03:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>Escolher uma tecnologia nova tem vários prós e contras, nesse post faço um comparativo do Flutter com outras formas de desenvolvimento híbrido do mercado</p>]]></content>
+    
+    <summary type="html">
+    
+      Escolher uma tecnologia nova tem vários prós e contras, nesse post faço um comparativo do Flutter com outras formas de desenvolvimento híbrido do mercado.
+    
+    </summary>
+    
+      <category term="Mobile" scheme="https://mariosouto.com/categories/Mobile/"/>
+    
+    
+      <category term="flutter" scheme="https://mariosouto.com/tags/flutter/"/>
+    
+      <category term="mobile" scheme="https://mariosouto.com/tags/mobile/"/>
+    
+      <category term="react native" scheme="https://mariosouto.com/tags/react-native/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>002 Como deixar multi linguagem/i18n uma aplicação React? </title>
+    <link href="https://mariosouto.com/002-como-i18n-multi-linguagem-em-uma-aplicacao-react-dicas-de-react/"/>
+    <id>https://mariosouto.com/002-como-i18n-multi-linguagem-em-uma-aplicacao-react-dicas-de-react/</id>
+    <published>2019-04-18T03:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>Segundo post da série dicas de react. Nesse compartilho com vocês um pouco da experiência que eu tive trabalhando e planejando um projeto i18n.</p>]]></content>
+    
+    <summary type="html">
+    
+      Segundo post da série dicas de react. Nesse compartilho com vocês um pouco da experiência que eu tive trabalhando e planejando um projeto i18n.
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://mariosouto.com/categories/JavaScript/"/>
+    
+    
+      <category term="react" scheme="https://mariosouto.com/tags/react/"/>
+    
+      <category term="dicas-de-react" scheme="https://mariosouto.com/tags/dicas-de-react/"/>
+    
+      <category term="i18n" scheme="https://mariosouto.com/tags/i18n/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Como rankear bem no Google? Boas práticas de SEO</title>
+    <link href="https://mariosouto.com/como-rankear-bem-no-google-boas-praticas-de-seo/"/>
+    <id>https://mariosouto.com/como-rankear-bem-no-google-boas-praticas-de-seo/</id>
+    <published>2019-04-17T03:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>Todo mundo quer mas poucos sites realmente conseguem: aparecer na primeira página do google. Quais são as melhores práticas? E o que fazer quando tudas as regras de SEO mudam o tempo todo? Assista e descubra</p>]]></content>
+    
+    <summary type="html">
+    
+      Todo mundo quer mas poucos sites realmente conseguem: aparecer na primeira página do google. Quais são as melhores práticas? E o que fazer quando tudas as regras de SEO mudam o tempo todo? Assista e descubra
+    
+    </summary>
+    
+      <category term="Tips" scheme="https://mariosouto.com/categories/Tips/"/>
+    
+    
+      <category term="seo" scheme="https://mariosouto.com/tags/seo/"/>
+    
+      <category term="html" scheme="https://mariosouto.com/tags/html/"/>
+    
+      <category term="performance" scheme="https://mariosouto.com/tags/performance/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>001 Como lidar de uma forma mais feliz com classes CSS condicionais no React?  — Dicas de React</title>
+    <link href="https://mariosouto.com/001-como-lidar-de-uma-forma-mais-feliz-com-classes-css-condicionais-no-react-dicas-de-react/"/>
+    <id>https://mariosouto.com/001-como-lidar-de-uma-forma-mais-feliz-com-classes-css-condicionais-no-react-dicas-de-react/</id>
+    <published>2019-04-08T03:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>Esse post é primeiro o primeiro de uma série com várias dicas de React. Nesse abordo uma solução que eu curto bastante pra lidar com classes condicionais e uma forma de deixar os seus classNames dos componentes mais legíveis.</p>]]></content>
+    
+    <summary type="html">
+    
+      Esse post é primeiro o primeiro de uma série com várias dicas de React. Nesse abordo uma solução que eu curto bastante pra lidar com classes condicionais e uma forma de deixar os seus classNames dos componentes mais legíveis.
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://mariosouto.com/categories/JavaScript/"/>
+    
+    
+      <category term="react" scheme="https://mariosouto.com/tags/react/"/>
+    
+      <category term="dicas-de-react" scheme="https://mariosouto.com/tags/dicas-de-react/"/>
+    
+      <category term="classnames" scheme="https://mariosouto.com/tags/classnames/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Debugando projetos NodeJS no VSCode</title>
+    <link href="https://mariosouto.com/debugando-projetos-nodejs-no-vscode/"/>
+    <id>https://mariosouto.com/debugando-projetos-nodejs-no-vscode/</id>
+    <published>2019-04-03T03:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>Tá começando com Node ou trabalhando com Node JS em um projeto cheio de arquivos e fica o tempo todo mandando um request novo pra debugar aquela variável que você não faz a menor ideia do pq existe e que diabos tem nela? Seus problemas acabaram</p>]]></content>
+    
+    <summary type="html">
+    
+      Tá começando com Node ou trabalhando com Node JS em um projeto cheio de arquivos e fica o tempo todo mandando um request novo pra debugar aquela variável que você não faz a menor ideia do pq existe e que diabos tem nela? Seus problemas acabaram
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://mariosouto.com/categories/JavaScript/"/>
+    
+    
+      <category term="node" scheme="https://mariosouto.com/tags/node/"/>
+    
+      <category term="nodejs" scheme="https://mariosouto.com/tags/nodejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Angular vs React – Hipsters #142</title>
+    <link href="https://mariosouto.com/angular-vs-react-hipsters-142/"/>
+    <id>https://mariosouto.com/angular-vs-react-hipsters-142/</id>
+    <published>2019-04-02T03:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>Colocando lenha na fogueira e conversando com o pessoal sobre as vantagens e desvantagens das duas ferramentas.</p>]]></content>
+    
+    <summary type="html">
+    
+      Colocando lenha na fogueira e conversando com o pessoal sobre as vantagens e desvantagens das duas ferramentas.
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://mariosouto.com/categories/JavaScript/"/>
+    
+    
+      <category term="react" scheme="https://mariosouto.com/tags/react/"/>
+    
+      <category term="podcast" scheme="https://mariosouto.com/tags/podcast/"/>
+    
+      <category term="angular" scheme="https://mariosouto.com/tags/angular/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Entendendo como fazer AJAX com a FetchAPI</title>
+    <link href="https://mariosouto.com/entendendo-como-fazer-ajax-com-a-fetchapi/"/>
+    <id>https://mariosouto.com/entendendo-como-fazer-ajax-com-a-fetchapi/</id>
+    <published>2019-03-26T03:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>Esse post é voltado para um público mais iniciante, eu sofri bastante no começo da carreira para aprender como fazer um AJAX e gostaria de devolver meu aprendizado por aqui.</p>]]></content>
+    
+    <summary type="html">
+    
+      Esse post é voltado para um público mais iniciante, eu sofri bastante no começo da carreira para aprender como fazer um AJAX e gostaria de devolver meu aprendizado por aqui.
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://mariosouto.com/categories/JavaScript/"/>
+    
+    
+      <category term="javascript" scheme="https://mariosouto.com/tags/javascript/"/>
+    
+      <category term="fetchapi" scheme="https://mariosouto.com/tags/fetchapi/"/>
+    
+      <category term="ajax" scheme="https://mariosouto.com/tags/ajax/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Como preparar uma aplicação React para o deploy em um servidor Node</title>
+    <link href="https://mariosouto.com/como-preparar-uma-aplicacao-react-para-o-deploy-em-um-servidor-node/"/>
+    <id>https://mariosouto.com/como-preparar-uma-aplicacao-react-para-o-deploy-em-um-servidor-node/</id>
+    <published>2019-03-18T03:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>Nesse post eu abordo como preparar a configuração de um servidor Node e o que é necessária para poder colocar preparar tudo antes do deploy</p>]]></content>
+    
+    <summary type="html">
+    
+      Nesse post eu abordo como preparar a configuração de um servidor Node e o que é necessária para poder colocar preparar tudo antes do deploy
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://mariosouto.com/categories/JavaScript/"/>
+    
+    
+      <category term="react" scheme="https://mariosouto.com/tags/react/"/>
+    
+      <category term="devtips" scheme="https://mariosouto.com/tags/devtips/"/>
+    
+      <category term="deploy" scheme="https://mariosouto.com/tags/deploy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Como compartilhar seu localhost de forma simplificada com o Ngrok</title>
+    <link href="https://mariosouto.com/como-compartilhar-seu-localhost-de-forma-simplificada-com-o-ngrok/"/>
+    <id>https://mariosouto.com/como-compartilhar-seu-localhost-de-forma-simplificada-com-o-ngrok/</id>
+    <published>2019-03-11T03:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>O ngrok vai mudar a forma como você mostra os projetos que você está desenvolvendo, testa suas PWAs entre outras coisas.</p>]]></content>
+    
+    <summary type="html">
+    
+      O ngrok vai mudar a forma como você mostra os projetos que você está desenvolvendo, testa suas PWAs entre outras coisas.
+    
+    </summary>
+    
+      <category term="Tips" scheme="https://mariosouto.com/categories/Tips/"/>
+    
+    
+      <category term="ngrok" scheme="https://mariosouto.com/tags/ngrok/"/>
+    
+      <category term="devtips" scheme="https://mariosouto.com/tags/devtips/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>#BrazilJS 2018 - Mario Souto - Extendendo o CSS com JavaScript e magia - feat. Houdini</title>
+    <link href="https://mariosouto.com/extendendo-o-css-com-javascript-e-magia-feat-houdini/"/>
+    <id>https://mariosouto.com/extendendo-o-css-com-javascript-e-magia-feat-houdini/</id>
+    <published>2018-08-25T03:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>Palestra sobre Houdini CSS e alguns experimentos com as possibilidades que ele irá trazer.: <a href="https://www.youtube.com/watch?v=qFYHOkuy35A" target="_blank" rel="noopener">https://www.youtube.com/watch?v=qFYHOkuy35A</a></p>]]></content>
+    
+    <summary type="html">
+    
+      Palestra sobre Houdini CSS e alguns experimentos com as possibilidades que ele irá trazer.
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://mariosouto.com/categories/JavaScript/"/>
+    
+    
+      <category term="css" scheme="https://mariosouto.com/tags/css/"/>
+    
+      <category term="talk" scheme="https://mariosouto.com/tags/talk/"/>
+    
+      <category term="houdinicss" scheme="https://mariosouto.com/tags/houdinicss/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>#BrazilJS2018 Entrevista - Mario Souto</title>
+    <link href="https://mariosouto.com/braziljs2018-entrevista-mario-souto/"/>
+    <id>https://mariosouto.com/braziljs2018-entrevista-mario-souto/</id>
+    <published>2018-08-25T03:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>Entrevista com a minha pessoa contando um pouco da euforia que eu tava de conseguir palestrar e compartilhar o que eu tava vendo sobre houdini com muuuita gente.</p>]]></content>
+    
+    <summary type="html">
+    
+      Entrevista com a minha pessoa contando um pouco da euforia que eu tava de conseguir palestrar e compartilhar o que eu tava vendo sobre houdini com muuuita gente.
+    
+    </summary>
+    
+      <category term="Tips" scheme="https://mariosouto.com/categories/Tips/"/>
+    
+    
+      <category term="braziljs" scheme="https://mariosouto.com/tags/braziljs/"/>
+    
+      <category term="entrevista" scheme="https://mariosouto.com/tags/entrevista/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Como o YouTube entrega este vídeo para você | Nerdologia Tech</title>
+    <link href="https://mariosouto.com/como-o-youtube-entrega-este-video-para-voce-or-nerdologia-tech/"/>
+    <id>https://mariosouto.com/como-o-youtube-entrega-este-video-para-voce-or-nerdologia-tech/</id>
+    <published>2018-06-28T03:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>Já parou pra pensar como a internet funciona? Eu participei da criação do roteiro desse nerdologia junto com o Paulo Silveira, Yuri Matheus e o Átila.</p>]]></content>
+    
+    <summary type="html">
+    
+      Já parou pra pensar como a internet funciona? Eu participei da criação do roteiro desse nerdologia junto com o Paulo Silveira, Yuri Matheus e o Átila.
+    
+    </summary>
+    
+      <category term="Tips" scheme="https://mariosouto.com/categories/Tips/"/>
+    
+    
+      <category term="nerdologia" scheme="https://mariosouto.com/tags/nerdologia/"/>
+    
+      <category term="como-a-web-funciona" scheme="https://mariosouto.com/tags/como-a-web-funciona/"/>
+    
+      <category term="http" scheme="https://mariosouto.com/tags/http/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Como manipular o Head das páginas React utilizando o React Helmet</title>
+    <link href="https://mariosouto.com/como-manipular-o-head-das-paginas-react-utilizando-o-react-helmet/"/>
+    <id>https://mariosouto.com/como-manipular-o-head-das-paginas-react-utilizando-o-react-helmet/</id>
+    <published>2018-02-23T03:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>Manipulando o Head das suas páginas com React de um jeito mais simples: <a href="https://medium.com/collabcode/roteamento-no-react-com-os-poderes-do-react-router-v4-fbc191b9937d" target="_blank" rel="noopener">https://medium.com/collabcode/roteamento-no-react-com-os-poderes-do-react-router-v4-fbc191b9937d</a></p>]]></content>
+    
+    <summary type="html">
+    
+      Manipulando o Head das suas páginas com React de um jeito mais simples.
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://mariosouto.com/categories/JavaScript/"/>
+    
+    
+      <category term="react" scheme="https://mariosouto.com/tags/react/"/>
+    
+      <category term="javascript" scheme="https://mariosouto.com/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Alura Live #72 – React e Comunidade</title>
+    <link href="https://mariosouto.com/alura-live-72-react-e-comunidade/"/>
+    <id>https://mariosouto.com/alura-live-72-react-e-comunidade/</id>
+    <published>2018-02-22T03:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>Participação na Alura Live, comentando sobre comunidade, o que fazemos no CollabCode e bastante papo sobre React: <a href="https://www.youtube.com/watch?v=ncoCJ4bM2Hc&amp;t=12s" target="_blank" rel="noopener">https://www.youtube.com/watch?v=ncoCJ4bM2Hc&amp;t=12s</a></p>]]></content>
+    
+    <summary type="html">
+    
+      Participação na Alura Live, comentando sobre comunidade, o que fazemos no CollabCode e bastante papo sobre React.
+    
+    </summary>
+    
+      <category term="Tips" scheme="https://mariosouto.com/categories/Tips/"/>
+    
+    
+      <category term="react" scheme="https://mariosouto.com/tags/react/"/>
+    
+      <category term="live" scheme="https://mariosouto.com/tags/live/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Roteamento no React com os poderes do React Router v4</title>
+    <link href="https://mariosouto.com/roteamento-no-react-com-os-poderes-do-react-router-v4/"/>
+    <id>https://mariosouto.com/roteamento-no-react-com-os-poderes-do-react-router-v4/</id>
+    <published>2018-02-12T02:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>Criar Single Page Applications com várias rotas no React pode ser menos díficil do que parece. Segue o link para quem quiser ver o que rolou: <a href="https://medium.com/collabcode/roteamento-no-react-com-os-poderes-do-react-router-v4-fbc191b9937d" target="_blank" rel="noopener">https://medium.com/collabcode/roteamento-no-react-com-os-poderes-do-react-router-v4-fbc191b9937d</a></p>]]></content>
+    
+    <summary type="html">
+    
+      Criar Single Page Applications com várias rotas no React pode ser menos díficil do que parece.
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://mariosouto.com/categories/JavaScript/"/>
+    
+    
+      <category term="react" scheme="https://mariosouto.com/tags/react/"/>
+    
+      <category term="javascript" scheme="https://mariosouto.com/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hipsters #72 – Por trás do WordPress</title>
+    <link href="https://mariosouto.com/hipsters-72-por-tras-do-wordpress/"/>
+    <id>https://mariosouto.com/hipsters-72-por-tras-do-wordpress/</id>
+    <published>2017-11-28T02:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>Participação no <a href="https://hipsters.tech" target="_blank" rel="noopener">hipsters.tech</a>, contando parte da minha experiência com WordPress, boas práticas, entre pontos bacanas de como trabalhar com a ferramenta. Segue o link para quem quiser ver o que rolou: <a href="https://hipsters.tech/hipsters-72-por-tras-do-wordpress/" target="_blank" rel="noopener">https://hipsters.tech/hipsters-72-por-tras-do-wordpress/</a></p>]]></content>
+    
+    <summary type="html">
+    
+      Participação no hipsters.tech, contando parte da minha experiência com WordPress, boas práticas, entre pontos bacanas de como trabalhar com a ferramenta.
+    
+    </summary>
+    
+      <category term="Tips" scheme="https://mariosouto.com/categories/Tips/"/>
+    
+    
+      <category term="podcast" scheme="https://mariosouto.com/tags/podcast/"/>
+    
+      <category term="wordpress" scheme="https://mariosouto.com/tags/wordpress/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Criando componentes CSS com o padrão BEM</title>
+    <link href="https://mariosouto.com/criando-componentes-css-com-o-padrao-bem/"/>
+    <id>https://mariosouto.com/criando-componentes-css-com-o-padrao-bem/</id>
+    <published>2017-08-08T03:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>Muita gente me pergunta como escrever CSS de forma organizada. Nesse post fiz um passo a passo para usar uma das formas mais conhecidas. Segue o link para quem quiser ver o que rolou: <a href="http://blog.alura.com.br/criando-componentes-css-com-padrao-bem/" target="_blank" rel="noopener">http://blog.alura.com.br/criando-componentes-css-com-padrao-bem/</a></p>]]></content>
+    
+    <summary type="html">
+    
+      Muita gente me pergunta como escrever CSS de forma organizada. Nesse post fiz um passo a passo para usar uma das formas mais conhecidas.
+    
+    </summary>
+    
+      <category term="Css" scheme="https://mariosouto.com/categories/Css/"/>
+    
+    
+      <category term="front end" scheme="https://mariosouto.com/tags/front-end/"/>
+    
+      <category term="css" scheme="https://mariosouto.com/tags/css/"/>
+    
+      <category term="bem" scheme="https://mariosouto.com/tags/bem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pré-processadores - Alura Live #36</title>
+    <link href="https://mariosouto.com/alura-live-pre-processadores/"/>
+    <id>https://mariosouto.com/alura-live-pre-processadores/</id>
+    <published>2017-07-12T03:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>Muita gente me pergunta como escrever CSS de forma organizada. Nesse post fiz um passo a passo para usar uma das formas mais conhecidas. Segue o link para quem quiser ver o que rolou: <a href="https://www.youtube.com/watch?v=ZkYz_NNBVLA" target="_blank" rel="noopener">https://www.youtube.com/watch?v=ZkYz_NNBVLA</a></p>]]></content>
+    
+    <summary type="html">
+    
+      Um bate-papo sobre o mundo dos pré-processadores.
+    
+    </summary>
+    
+      <category term="Css" scheme="https://mariosouto.com/categories/Css/"/>
+    
+    
+      <category term="front end" scheme="https://mariosouto.com/tags/front-end/"/>
+    
+      <category term="pre-processadores" scheme="https://mariosouto.com/tags/pre-processadores/"/>
+    
+      <category term="css" scheme="https://mariosouto.com/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Inputs Materializados com CSS</title>
+    <link href="https://mariosouto.com/inputs-materializados-com-css/"/>
+    <id>https://mariosouto.com/inputs-materializados-com-css/</id>
+    <published>2016-12-22T02:00:00.000Z</published>
+    <updated>2020-05-11T12:07:26.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>Depois de muita luta e vencer a faculdade, cá estou eu escrevendo meu primeiro post que dedico ao <a href="https://twitter.com/afonsopacifer/" target="_blank" rel="noopener">@afonsopacifer</a> (pela insistência em me motivar a escrever). Bom eu sempre usei Android e acho muito mágico o que a galera faz nos aplicativos e como algumas animações violam o que eu considero como física do front-end.</p><a id="more"></a> <p>Boa parte dessas animações na web são facilmente feitas com JS…</p><blockquote><p>Ahhh, mas ai é fácil quero ver fazer diferente, ser pioneiro, inovador, senhor descolado.</p></blockquote><p>Cof cof, continuando… Sim é relativamente fácil fazer essas animações com JS e justamente por buscar uma outra alternativa eu resolvi fazer esse post. Então o desafio foi lançado: <strong>Como fazer um Material Input somente com CSS?</strong></p><h2 id="Primeiramente"><a href="#Primeiramente" class="headerlink" title="Primeiramente"></a>Primeiramente</h2><p>Os ingredientes necessários para essa receita serão: HTML5 Data Form Validations, Alguns seletores e lógica de CSS &lt;3, amor e pensar um pouco fora do padrão.</p><p>Vale ressaltar que <strong>isso é um experimento</strong>, e que experimentos são uma fonte importante de conhecimento para lidar com problemas do dia-a-dia.</p><h3 id="Data-Form-Validations"><a href="#Data-Form-Validations" class="headerlink" title="Data Form Validations"></a>Data Form Validations</h3><p>Faz algum tempo que muitas pessoas utilizam o atributo <strong>required</strong> do HTML5 para fazer algumas validações simples em formulários como no exemplo abaixo:</p><p></p><p data-height="265" data-theme-id="dark" data-slug-hash="bBzZXj" data-default-tab="html,result" data-user="omariosouto" data-embed-version="2" data-pen-title="HTML5 Data Form Validations" class="codepen">See the Pen <a href="http://codepen.io/omariosouto/pen/bBzZXj/" target="_blank" rel="noopener">HTML5 Data Form Validations</a> by Mario Souto (<a href="http://codepen.io/omariosouto" target="_blank" rel="noopener">@omariosouto</a>) on <a href="http://codepen.io" target="_blank" rel="noopener">CodePen</a>.</p><p></p><script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script><p>As validações com required são bem bacanas, pois elas pegam o [type] do input e tiram por base dele se o campo foi preenchido corretamente ou não, validando e-mails, texts e etc…</p><p>Porém, uma coisa que pouca gente sabe é que é possível juntamente do required utilizar o atributo <strong>pattern</strong> que possibilita fazer validações complexas baseadas em expressões regulares sem o uso de JavaScript.</p><p><img src="https://mariosouto.com/assets/img/im-god.gif" alt="WHERE IS YOUR GOD NOW?"></p><blockquote><p>WHERE IS YOUR GOD NOW?</p></blockquote><p>Calma que não para por ai, além de ser possível fazer validações no HTML é possível capturar o estado delas utilizando CSS com as Pseudo Classes <strong>valid</strong> e <strong>invalid</strong>, ou seja: <em>É possível estilizar um elemento, se baseando em tratamento de dados somente utilizando linguagens de marcação e estilo!</em></p><h2 id="Segundamente-Maos-a-obra"><a href="#Segundamente-Maos-a-obra" class="headerlink" title="Segundamente: Mãos a obra!"></a>Segundamente: Mãos a obra!</h2><p>Dessa vez nosso objetivo não é o trapézio descendente e sim esse cara aqui:</p><p><img src="https://mariosouto.com/assets/img/input-material-design.gif" alt="Exemplo de input do Material Design"></p><p>Indo pelo passo a passo, vamos começar pela estrutura HTML que será bem simples:</p><script src="https://gist.github.com/omariosouto/8fc58a5149603e00d02288ebdeb2d509.js"></script><p>1 - Uma tag section e uma form<br>2 - Um input-container para agrupar o conjunto da label com o input<br>3 - E por fim, um input com um id “name” e um label logo <em>abaixo</em>, com o <code>for=</code> referenciando para o id do input (a ordem nesse caso é bem importante e vocês já irão entender).</p><p>Feito isso, o próximo passo é colocar nossa regex no atributo pattern deixando ele assim: <code>pattern=&quot;.+&quot;</code> (essa condição retorna válido caso qualquer caracter seja inserido dentro do input).</p><p>Agora vem a parte do amor com CSS &lt;3</p><h3 id="Base"><a href="#Base" class="headerlink" title="Base"></a>Base</h3><script src="https://gist.github.com/omariosouto/184bcff2e14c6e4a45e1b6e0cf7c7a65.js"></script><p>A estrutura é bem simples, basicamente aplicamos um estilo no input para ele se parecer com o do Material Design e posicionamentos de forma absoluta o label a esquerda do input-container e centralizado em relação ao input.</p><h3 id="Interacao"><a href="#Interacao" class="headerlink" title="Interação"></a>Interação</h3><script src="https://gist.github.com/omariosouto/302b568ba17d5a62c954ee997d70b98b.js"></script><p>Aqui é onde acontece a mágica, nós validamos quando o input for valido no HTML e pelo CSS verificamos esse estado, adicionando um efeito ao label que é o elemento seguinte ao input.</p><p>E para finalizar com um toque especial vamos dar um tapa no visual:</p><script src="https://gist.github.com/omariosouto/e3013895740025ea91715bbe643138fb.js"></script><p>E finalmente aqui está o resultado do nosso experimento!</p><p></p><p data-height="357" data-theme-id="dark" data-slug-hash="LbENBr" data-default-tab="html,result" data-user="omariosouto" data-embed-version="2" data-pen-title="Material Design Input - CSS Pure" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/omariosouto/pen/LbENBr/" target="_blank" rel="noopener">Material Design Input - CSS Pure</a> by Mario Souto (<a href="http://codepen.io/omariosouto" target="_blank" rel="noopener">@omariosouto</a>) on <a href="http://codepen.io" target="_blank" rel="noopener">CodePen</a>.</p><p></p><script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script><p>Bom, espero que tenham gostado do post em breve trarei mais conteúdos, quaisquer dúvidas deixem nos comentários ou me chamem em alguma rede social!</p><ul><li><a href="https://www.facebook.com/omariosouto" target="_blank" rel="noopener">Facebook</a></li></ul><h2 id="Referencias"><a href="#Referencias" class="headerlink" title="Referências:"></a>Referências:</h2><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Data_form_validation" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Data_form_validation</a></li><li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/:invalid" target="_blank" rel="noopener">https://developer.mozilla.org/pt-BR/docs/Web/CSS/:invalid</a></li><li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/:valid" target="_blank" rel="noopener">https://developer.mozilla.org/pt-BR/docs/Web/CSS/:valid</a></li><li><a href="http://materializecss.com/forms.html" target="_blank" rel="noopener">http://materializecss.com/forms.html</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      É possível validar dados com HTML e CSS?
+    
+    </summary>
+    
+      <category term="css" scheme="https://mariosouto.com/categories/css/"/>
+    
+    
+      <category term="css" scheme="https://mariosouto.com/tags/css/"/>
+    
+      <category term="js" scheme="https://mariosouto.com/tags/js/"/>
+    
+      <category term="front" scheme="https://mariosouto.com/tags/front/"/>
+    
+  </entry>
+  
+</feed>
